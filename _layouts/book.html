@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<article class="page">
+  <h1>{{ page.title }}</h1>
+
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:flex-start;">
+    {% if page.cover %}
+      <div style="flex: 0 0 auto;">
+        <img src="{{ page.cover | relative_url }}" alt="Cover {{ page.title }}" style="max-width:260px; border-radius:12px; border:1px solid #e5e7eb;">
+      </div>
+    {% endif %}
+
+    <div style="flex: 1 1 360px;">
+      {% if page.publisher %}<p><strong>Editore:</strong> {{ page.publisher }}</p>{% endif %}
+      {% if page.date %}<p><strong>Anno:</strong> {{ page.date | date: "%Y" }}</p>{% endif %}
+
+      {% if page.index_pdf %}
+        <p><a href="{{ page.index_pdf | relative_url }}" target="_blank" rel="noopener">📄 Indice (PDF)</a></p>
+      {% endif %}
+
+      {% if page.buy_links %}
+        <h3 style="margin-top:1rem;">Dove acquistare</h3>
+        <ul>
+          {% for l in page.buy_links %}
+            <li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  <hr>
+  <div class="page__content">
+    {{ content }}
+  </div>
+</article>

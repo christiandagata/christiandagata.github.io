@@ -1,0 +1,46 @@
+title: "Christian D'Agata"
+url: "https://christiandagata.github.io"
+baseurl: ""
+
+author:
+  name: "Christian D'Agata"
+  avatar: "/images/profile.png"
+  bio: >
+    Assegnista di ricerca presso l’Università degli Studi di Catania (20 marzo 2024 – 19 marzo 2026) nel contesto del progetto PNRR <em>Verismo Digitale</em> (Filologia e lessicografia digitale dei testi della letteratura italiana dell’Otto/Novecento).<br>
+    <strong>Interessi:</strong> TEI-XML, edizioni scientifiche digitali, hyperedizioni, DSL, NLP/LLM.
+  location: "University of Catania"
+  email: "TODO: tua email"
+  uri: "https://christiandagata.github.io"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/christiandagata"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/TODO"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=TODO"
+
+collections:
+  books:
+    output: true
+    permalink: /book/:path/
+  software:
+    output: true
+    permalink: /software/:path/
+  datasets:
+    output: true
+    permalink: /dataset/:path/
+  activity:
+    output: true
+    permalink: /activity/:path/
+  associations:
+    output: true
+    permalink: /association/:path/
+  conferences:
+    output: true
+    permalink: /conference/:path/
+  digital_editions:
+    output: true
+    permalink: /edition/:path/

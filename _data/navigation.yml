@@ -1,0 +1,21 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Books"
+    url: /books/
+  - title: "Software"
+    url: /software/
+  - title: "Datasets"
+    url: /datasets/
+  - title: "Digital Editions"
+    url: /digital-editions/
+  - title: "Activity"
+    url: /activity/
+  - title: "Conferences"
+    url: /conferences/
+  - title: "Associations"
+    url: /associations/
+  - title: "CV"
+    url: /cv/
