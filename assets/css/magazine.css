@@ -9,7 +9,7 @@
 :root{
   --mag-bg: transparent;
 
-  --mag-surface:#ffffff;
+  --mag-surface:#fffaf2;
   --mag-surface-2:rgba(0,0,0,.03);
 
   --mag-text:rgba(0,0,0,.90);
@@ -39,7 +39,7 @@
    ========================= */
 @media (prefers-color-scheme: dark){
   html:not([data-theme="light"]):not([data-theme="dark"]){
-    --mag-surface:#0b1220;               /* deep navy */
+    --mag-surface:var(--global-bg-color);
     --mag-surface-2:rgba(255,255,255,.06);
 
     --mag-text:rgba(255,255,255,.92);
@@ -64,7 +64,7 @@
    MANUAL OVERRIDE (if present)
    ========================= */
 html[data-theme="dark"]{
-  --mag-surface:#0b1220;
+  --mag-surface:var(--global-bg-color);
   --mag-surface-2:rgba(255,255,255,.06);
 
   --mag-text:rgba(255,255,255,.92);
@@ -85,7 +85,7 @@ html[data-theme="dark"]{
 }
 
 html[data-theme="light"]{
-  --mag-surface:#ffffff;
+  --mag-surface:#fffaf2;
   --mag-surface-2:rgba(0,0,0,.03);
 
   --mag-text:rgba(0,0,0,.90);
