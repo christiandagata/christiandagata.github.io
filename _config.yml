@@ -13,6 +13,8 @@ author:
   location: University of Catania
   email: 'TODO: tua email'
   uri: https://christiandagata.github.io
+  include:
+  - _pages
   links:
   - label: GitHub
     icon: fab fa-github
@@ -26,25 +28,25 @@ author:
 collections:
   books:
     output: true
-    permalink: /books/:path/
+    permalink: /book/:path/
   software:
     output: true
     permalink: /software/:path/
   datasets:
     output: true
-    permalink: /datasets/:path/
+    permalink: /dataset/:path/
   activity:
     output: true
     permalink: /activity/:path/
   associations:
     output: true
-    permalink: /associations/:path/
+    permalink: /association/:path/
   digital_editions:
     output: true
-    permalink: /digital-editions/:path/
+    permalink: /digital-edition/:path/
   talks:
     output: true
-    permalink: /talks/:path/
+    permalink: /talk/:path/
   publications:
     output: true
-    permalink: /publications/:path/
+    permalink: /publication/:path/
