@@ -4,76 +4,83 @@
 .mag-wrap{display:grid;gap:1.6rem}
 
 /* =========================
-   Color tokens
+   Color tokens (LIGHT default)
    ========================= */
 :root{
   --mag-bg: transparent;
 
-  --mag-surface: #ffffff;
-  --mag-surface-2: rgba(0,0,0,.03);
+  --mag-surface:#ffffff;
+  --mag-surface-2:rgba(0,0,0,.03);
 
-  --mag-text: rgba(0,0,0,.90);
-  --mag-muted: rgba(0,0,0,.70);
+  --mag-text:rgba(0,0,0,.90);
+  --mag-muted:rgba(0,0,0,.70);
 
-  --mag-border: #e5e7eb;
-  --mag-shadow: 0 10px 30px rgba(0,0,0,.08);
+  --mag-border:#e5e7eb;
+  --mag-shadow:0 10px 30px rgba(0,0,0,.08);
 
   /* Buttons */
-  --mag-btn-border: rgba(17,24,39,.9);
-  --mag-btn-bg-hover: rgba(17,24,39,.95);
-  --mag-btn-fg-hover: #ffffff;
+  --mag-btn-border:rgba(17,24,39,.9);
+  --mag-btn-bg-hover:rgba(17,24,39,.95);
+  --mag-btn-fg-hover:#ffffff;
 
-  --mag-btn-secondary-border: #e5e7eb;
-  --mag-btn-secondary-bg-hover: #f3f4f6;
-  --mag-btn-secondary-fg-hover: #111827;
+  --mag-btn-secondary-border:#e5e7eb;
+  --mag-btn-secondary-bg-hover:#f3f4f6;
+  --mag-btn-secondary-fg-hover:#111827;
 }
 
-/* Dark mode triggers (cover multiple implementations) */
-html[data-theme="dark"],
-body[data-theme="dark"],
+/* =========================
+   DARK mode triggers
+   - In your site: data-theme is NULL in light
+     and becomes "$1" in dark, so we treat:
+       "any data-theme that is not light" as dark.
+   ========================= */
+html[data-theme]:not([data-theme="light"]),
+body[data-theme]:not([data-theme="light"]),
 html.dark,
 body.dark,
 .dark-mode,
-[data-theme="dark"]{
-  --mag-surface: rgba(255,255,255,.06);
-  --mag-surface-2: rgba(255,255,255,.08);
+html.theme-dark,
+body.theme-dark{
+  --mag-surface:rgba(255,255,255,.06);
+  --mag-surface-2:rgba(255,255,255,.08);
 
-  --mag-text: rgba(255,255,255,.92);
-  --mag-muted: rgba(255,255,255,.70);
+  --mag-text:rgba(255,255,255,.92);
+  --mag-muted:rgba(255,255,255,.70);
 
-  --mag-border: rgba(255,255,255,.14);
-  --mag-shadow: 0 10px 30px rgba(0,0,0,.35);
+  --mag-border:rgba(255,255,255,.14);
+  --mag-shadow:0 10px 30px rgba(0,0,0,.35);
 
-  --mag-btn-border: rgba(255,255,255,.55);
-  --mag-btn-bg-hover: rgba(255,255,255,.14);
-  --mag-btn-fg-hover: rgba(255,255,255,.95);
+  --mag-btn-border:rgba(255,255,255,.55);
+  --mag-btn-bg-hover:rgba(255,255,255,.14);
+  --mag-btn-fg-hover:rgba(255,255,255,.95);
 
-  --mag-btn-secondary-border: rgba(255,255,255,.22);
-  --mag-btn-secondary-bg-hover: rgba(255,255,255,.10);
-  --mag-btn-secondary-fg-hover: rgba(255,255,255,.95);
+  --mag-btn-secondary-border:rgba(255,255,255,.22);
+  --mag-btn-secondary-bg-hover:rgba(255,255,255,.10);
+  --mag-btn-secondary-fg-hover:rgba(255,255,255,.95);
 }
 
-/* Force LIGHT tokens when light is explicitly selected */
+/* Optional: if someday the toggle sets data-theme="light" explicitly */
 html[data-theme="light"],
 body[data-theme="light"],
-html.theme-light,
-body.theme-light,
+html.light,
+body.light,
 .light-mode,
-[data-theme="light"]{
-  --mag-surface: #ffffff;
-  --mag-surface-2: rgba(0,0,0,.03);
-  --mag-text: rgba(0,0,0,.90);
-  --mag-muted: rgba(0,0,0,.70);
-  --mag-border: #e5e7eb;
-  --mag-shadow: 0 10px 30px rgba(0,0,0,.08);
+html.theme-light,
+body.theme-light{
+  --mag-surface:#ffffff;
+  --mag-surface-2:rgba(0,0,0,.03);
+  --mag-text:rgba(0,0,0,.90);
+  --mag-muted:rgba(0,0,0,.70);
+  --mag-border:#e5e7eb;
+  --mag-shadow:0 10px 30px rgba(0,0,0,.08);
 
-  --mag-btn-border: rgba(17,24,39,.9);
-  --mag-btn-bg-hover: rgba(17,24,39,.95);
-  --mag-btn-fg-hover: #ffffff;
+  --mag-btn-border:rgba(17,24,39,.9);
+  --mag-btn-bg-hover:rgba(17,24,39,.95);
+  --mag-btn-fg-hover:#ffffff;
 
-  --mag-btn-secondary-border: #e5e7eb;
-  --mag-btn-secondary-bg-hover: #f3f4f6;
-  --mag-btn-secondary-fg-hover: #111827;
+  --mag-btn-secondary-border:#e5e7eb;
+  --mag-btn-secondary-bg-hover:#f3f4f6;
+  --mag-btn-secondary-fg-hover:#111827;
 }
 
 /* =========================
@@ -118,9 +125,7 @@ body.theme-light,
   background:transparent;
 }
 .mag-btn:hover{background:var(--mag-btn-bg-hover);color:var(--mag-btn-fg-hover)}
-.mag-btn.secondary{
-  border-color:var(--mag-btn-secondary-border);
-}
+.mag-btn.secondary{border-color:var(--mag-btn-secondary-border)}
 .mag-btn.secondary:hover{
   background:var(--mag-btn-secondary-bg-hover);
   color:var(--mag-btn-secondary-fg-hover);
@@ -153,12 +158,15 @@ body.theme-light,
   opacity:0;
   transition:opacity .25s ease;
 }
-html[data-theme="dark"] .mag-card::before,
-body[data-theme="dark"] .mag-card::before,
+
+/* Dark overlay variant (same trigger logic as tokens) */
+html[data-theme]:not([data-theme="light"]) .mag-card::before,
+body[data-theme]:not([data-theme="light"]) .mag-card::before,
 html.dark .mag-card::before,
 body.dark .mag-card::before,
 .dark-mode .mag-card::before,
-[data-theme="dark"] .mag-card::before{
+html.theme-dark .mag-card::before,
+body.theme-dark .mag-card::before{
   background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.10));
 }
 
@@ -212,44 +220,4 @@ body.dark .mag-card::before,
 @media (max-width:720px){
   .mag-hero{grid-template-columns:1fr}
   .mag-grid{grid-template-columns:1fr}
-}
-/* ===== Force LIGHT as default ===== */
-:root{
-  --mag-surface:#ffffff;
-  --mag-surface-2:rgba(0,0,0,.03);
-  --mag-text:rgba(0,0,0,.90);
-  --mag-muted:rgba(0,0,0,.70);
-  --mag-border:#e5e7eb;
-  --mag-shadow:0 10px 30px rgba(0,0,0,.08);
-
-  --mag-btn-border:rgba(17,24,39,.9);
-  --mag-btn-bg-hover:rgba(17,24,39,.95);
-  --mag-btn-fg-hover:#ffffff;
-
-  --mag-btn-secondary-border:#e5e7eb;
-  --mag-btn-secondary-bg-hover:#f3f4f6;
-  --mag-btn-secondary-fg-hover:#111827;
-}
-
-/* ===== Dark only when explicit toggle is active ===== */
-html[data-theme="dark"],
-body[data-theme="dark"],
-html.dark,
-body.dark,
-.dark-mode,
-[data-theme="dark"]{
-  --mag-surface:rgba(255,255,255,.06);
-  --mag-surface-2:rgba(255,255,255,.08);
-  --mag-text:rgba(255,255,255,.92);
-  --mag-muted:rgba(255,255,255,.70);
-  --mag-border:rgba(255,255,255,.14);
-  --mag-shadow:0 10px 30px rgba(0,0,0,.35);
-
-  --mag-btn-border:rgba(255,255,255,.55);
-  --mag-btn-bg-hover:rgba(255,255,255,.14);
-  --mag-btn-fg-hover:rgba(255,255,255,.95);
-
-  --mag-btn-secondary-border:rgba(255,255,255,.22);
-  --mag-btn-secondary-bg-hover:rgba(255,255,255,.10);
-  --mag-btn-secondary-fg-hover:rgba(255,255,255,.95);
 }
