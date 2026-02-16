@@ -1,7 +1,7 @@
 ---
 title: "Datasets"
 permalink: /datasets/
-layout: collection
+layout: single
 collection: datasets
 entries_layout: list
 author_profile: true

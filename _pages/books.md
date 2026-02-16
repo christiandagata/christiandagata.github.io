@@ -1,7 +1,7 @@
 ---
 title: "Books"
 permalink: /books/
-layout: collection
+layout: single
 collection: books
 entries_layout: list
 author_profile: true
