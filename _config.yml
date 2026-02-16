@@ -2,7 +2,7 @@ title: Christian D'Agata
 url: https://christiandagata.github.io
 baseurl: ''
 include:
-  - _pages
+- _pages
 author:
   name: Christian D'Agata
   avatar: 'profile.jpg'
