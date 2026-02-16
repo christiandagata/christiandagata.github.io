@@ -131,7 +131,8 @@ body.dark,
 }
 @media (max-width:720px){.mag-hero{grid-template-columns:1fr}.mag-grid{grid-template-columns:1fr}}
 @media (prefers-color-scheme: dark){
-  :root{
+  html:not([data-theme="light"]) :root,
+  :root:not([data-theme="light"]) {
     --mag-surface: rgba(255,255,255,.06);
     --mag-surface-2: rgba(255,255,255,.08);
     --mag-text: rgba(255,255,255,.92);
@@ -139,4 +140,23 @@ body.dark,
     --mag-border: rgba(255,255,255,.14);
     --mag-shadow: 0 10px 30px rgba(0,0,0,.35);
   }
+}
+
+/* =========================================
+   FORCE LIGHT MODE TOKENS when light is selected
+   (prevents prefers-color-scheme from overriding)
+   ========================================= */
+html[data-theme="light"],
+body[data-theme="light"],
+html.theme-light,
+body.theme-light,
+.light-mode,
+[data-theme="light"]{
+  --mag-bg: transparent;
+  --mag-surface: #ffffff;
+  --mag-surface-2: rgba(0,0,0,.03);
+  --mag-text: rgba(0,0,0,.90);
+  --mag-muted: rgba(0,0,0,.70);
+  --mag-border: #e5e7eb;
+  --mag-shadow: 0 10px 30px rgba(0,0,0,.08);
 }
