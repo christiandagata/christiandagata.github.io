@@ -1,7 +1,9 @@
 ---
 title: "Publications"
 permalink: /publications/
-layout: single
+layout: collection
+collection: publications
+entries_layout: list
 author_profile: true
 ---
 
