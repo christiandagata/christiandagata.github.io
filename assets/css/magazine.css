@@ -31,4 +31,112 @@
 .mag-list .mag-main a:hover{text-decoration:underline}
 .mag-list .mag-sub{font-size:.9rem;opacity:.75;margin-top:.15rem}
 .mag-list .mag-right{flex:0 0 auto;font-size:.85rem;opacity:.8}
+/* =========================
+   Magazine: color tokens
+   ========================= */
+:root{
+  --mag-bg: transparent;
+  --mag-surface: #ffffff;
+  --mag-surface-2: rgba(0,0,0,.03);
+  --mag-text: rgba(0,0,0,.90);
+  --mag-muted: rgba(0,0,0,.70);
+  --mag-border: #e5e7eb;
+  --mag-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Dark mode triggers (cover multiple theme implementations) */
+html[data-theme="dark"],
+body[data-theme="dark"],
+html.dark,
+body.dark,
+.dark-mode,
+[data-theme="dark"]{
+  --mag-bg: transparent;
+  --mag-surface: rgba(255,255,255,.06);
+  --mag-surface-2: rgba(255,255,255,.08);
+  --mag-text: rgba(255,255,255,.92);
+  --mag-muted: rgba(255,255,255,.70);
+  --mag-border: rgba(255,255,255,.14);
+  --mag-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+/* =========================
+   Apply tokens
+   ========================= */
+.mag-wrap{
+  color: var(--mag-text);
+}
+
+/* HERO */
+.mag-hero{
+  background: var(--mag-surface);
+  border-color: var(--mag-border);
+  box-shadow: var(--mag-shadow);
+}
+.mag-hero .mag-kicker,
+.mag-hero .mag-meta{
+  color: var(--mag-muted);
+}
+
+/* CARD */
+.mag-card{
+  background: var(--mag-surface);
+  border-color: var(--mag-border);
+  box-shadow: var(--mag-shadow);
+  color: var(--mag-text);
+}
+.mag-card .mag-kicker,
+.mag-card .mag-meta,
+.mag-card .mag-excerpt{
+  color: var(--mag-muted);
+}
+
+/* overlay/hover layer should not force light colors */
+.mag-card::before{
+  background: var(--mag-surface-2);
+}
+
+/* Links inside magazine */
+.mag-wrap a{
+  color: inherit;
+}
+.mag-wrap a:hover{
+  color: inherit;
+}
+
+/* LIST (Publications / Talks compact lists) */
+.mag-list{
+  background: var(--mag-surface);
+  border-color: var(--mag-border);
+  color: var(--mag-text);
+}
+.mag-list li{
+  border-top-color: var(--mag-border);
+}
+.mag-list li:hover{
+  background: var(--mag-surface-2);
+}
+.mag-list .mag-date,
+.mag-list .mag-sub,
+.mag-list .mag-right{
+  color: var(--mag-muted);
+}
+
+/* Buttons (keep readable in dark) */
+.mag-btn{
+  border-color: var(--mag-border);
+}
+.mag-btn.secondary{
+  background: transparent;
+}
 @media (max-width:720px){.mag-hero{grid-template-columns:1fr}.mag-grid{grid-template-columns:1fr}}
+@media (prefers-color-scheme: dark){
+  :root{
+    --mag-surface: rgba(255,255,255,.06);
+    --mag-surface-2: rgba(255,255,255,.08);
+    --mag-text: rgba(255,255,255,.92);
+    --mag-muted: rgba(255,255,255,.70);
+    --mag-border: rgba(255,255,255,.14);
+    --mag-shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+}
