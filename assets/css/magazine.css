@@ -34,9 +34,10 @@
 /* =========================
    AUTO DARK (browser/OS preference)
    Applies ONLY when user did not force a theme via data-theme
+   IMPORTANT: :root is <html>, so do NOT use "html ... :root" with a space.
    ========================= */
 @media (prefers-color-scheme: dark){
-  html:not([data-theme="light"]):not([data-theme="dark"]) :root{
+  html:not([data-theme="light"]):not([data-theme="dark"]){
     --mag-surface:rgba(255,255,255,.06);
     --mag-surface-2:rgba(255,255,255,.08);
 
@@ -60,6 +61,7 @@
 
 /* =========================
    MANUAL OVERRIDE (if present)
+   These always win over prefers-color-scheme
    ========================= */
 html[data-theme="dark"]{
   --mag-surface:rgba(255,255,255,.06);
@@ -83,7 +85,7 @@ html[data-theme="dark"]{
 }
 
 html[data-theme="light"]{
-  /* (optional) explicit light — identical to :root, but keeps intent clear */
+  /* explicit light (kept for clarity) */
   --mag-surface:#ffffff;
   --mag-surface-2:rgba(0,0,0,.03);
   --mag-text:rgba(0,0,0,.90);
