@@ -1,6 +1,8 @@
 title: Christian D'Agata
 url: https://christiandagata.github.io
 baseurl: ''
+include:
+  - _pages
 author:
   name: Christian D'Agata
   avatar: 'profile.jpg'
@@ -13,8 +15,6 @@ author:
   location: University of Catania
   email: 'TODO: tua email'
   uri: https://christiandagata.github.io
-  include:
-  - _pages
   links:
   - label: GitHub
     icon: fab fa-github
