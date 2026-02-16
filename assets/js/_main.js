@@ -34,7 +34,7 @@ let setTheme = (theme) => {
     $("html").attr("data-theme", "dark");
     $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
   } else if (use_theme === "light") {
-    $("html").removeAttr("data-theme");
+    $("html").attr("data-theme", "light");
     $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
   }
 };
