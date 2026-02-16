@@ -53,27 +53,6 @@ body.dark,
   --mag-btn-secondary-fg-hover: rgba(255,255,255,.95);
 }
 
-/* If OS prefers dark but user did NOT force light */
-@media (prefers-color-scheme: dark){
-  html:not([data-theme="light"]) :root,
-  :root:not([data-theme="light"]) {
-    --mag-surface: rgba(255,255,255,.06);
-    --mag-surface-2: rgba(255,255,255,.08);
-    --mag-text: rgba(255,255,255,.92);
-    --mag-muted: rgba(255,255,255,.70);
-    --mag-border: rgba(255,255,255,.14);
-    --mag-shadow: 0 10px 30px rgba(0,0,0,.35);
-
-    --mag-btn-border: rgba(255,255,255,.55);
-    --mag-btn-bg-hover: rgba(255,255,255,.14);
-    --mag-btn-fg-hover: rgba(255,255,255,.95);
-
-    --mag-btn-secondary-border: rgba(255,255,255,.22);
-    --mag-btn-secondary-bg-hover: rgba(255,255,255,.10);
-    --mag-btn-secondary-fg-hover: rgba(255,255,255,.95);
-  }
-}
-
 /* Force LIGHT tokens when light is explicitly selected */
 html[data-theme="light"],
 body[data-theme="light"],
@@ -233,4 +212,44 @@ body.dark .mag-card::before,
 @media (max-width:720px){
   .mag-hero{grid-template-columns:1fr}
   .mag-grid{grid-template-columns:1fr}
+}
+/* ===== Force LIGHT as default ===== */
+:root{
+  --mag-surface:#ffffff;
+  --mag-surface-2:rgba(0,0,0,.03);
+  --mag-text:rgba(0,0,0,.90);
+  --mag-muted:rgba(0,0,0,.70);
+  --mag-border:#e5e7eb;
+  --mag-shadow:0 10px 30px rgba(0,0,0,.08);
+
+  --mag-btn-border:rgba(17,24,39,.9);
+  --mag-btn-bg-hover:rgba(17,24,39,.95);
+  --mag-btn-fg-hover:#ffffff;
+
+  --mag-btn-secondary-border:#e5e7eb;
+  --mag-btn-secondary-bg-hover:#f3f4f6;
+  --mag-btn-secondary-fg-hover:#111827;
+}
+
+/* ===== Dark only when explicit toggle is active ===== */
+html[data-theme="dark"],
+body[data-theme="dark"],
+html.dark,
+body.dark,
+.dark-mode,
+[data-theme="dark"]{
+  --mag-surface:rgba(255,255,255,.06);
+  --mag-surface-2:rgba(255,255,255,.08);
+  --mag-text:rgba(255,255,255,.92);
+  --mag-muted:rgba(255,255,255,.70);
+  --mag-border:rgba(255,255,255,.14);
+  --mag-shadow:0 10px 30px rgba(0,0,0,.35);
+
+  --mag-btn-border:rgba(255,255,255,.55);
+  --mag-btn-bg-hover:rgba(255,255,255,.14);
+  --mag-btn-fg-hover:rgba(255,255,255,.95);
+
+  --mag-btn-secondary-border:rgba(255,255,255,.22);
+  --mag-btn-secondary-bg-hover:rgba(255,255,255,.10);
+  --mag-btn-secondary-fg-hover:rgba(255,255,255,.95);
 }
