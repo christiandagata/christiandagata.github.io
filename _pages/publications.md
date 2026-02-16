@@ -10,25 +10,16 @@ author_profile: true
 {% assign pub_other = pub_all | where_exp: "p", "p.pub_type != 'book'" %}
 
 ## Books
-<ul>
 {% for p in pub_books %}
-  <li>
-    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-    {% if p.citation %}<br><small>{{ p.citation }}</small>{% endif %}
-    {% if p.doi %}<br><small><img class="doi-badge" alt="DOI" src="https://img.shields.io/badge/DOI-{{ p.doi | uri_escape }}-blue"> <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">doi.org</a></small>{% endif %}
-  </li>
+- [{{ p.title }}]({{ p.url | relative_url }})
+  {% if p.citation %}{{ p.citation }}{% endif %}
+  {% if p.doi %}[DOI](https://doi.org/{{ p.doi }}){% endif %}
 {% endfor %}
-</ul>
 
 ## Articles, chapters, proceedings
-<ul>
 {% for p in pub_other %}
-  <li>
-    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-    {% if p.venue %} — <em>{{ p.venue }}</em>{% endif %}
-    {% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
-    {% if p.citation %}<br><small>{{ p.citation }}</small>{% endif %}
-    {% if p.doi %}<br><small><img class="doi-badge" alt="DOI" src="https://img.shields.io/badge/DOI-{{ p.doi | uri_escape }}-blue"> <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">doi.org</a></small>{% endif %}
-  </li>
+- [{{ p.title }}]({{ p.url | relative_url }})
+  {% if p.venue %} — {{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
+  {% if p.citation %}{{ p.citation }}{% endif %}
+  {% if p.doi %}[DOI](https://doi.org/{{ p.doi }}){% endif %}
 {% endfor %}
-</ul>
