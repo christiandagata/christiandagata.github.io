@@ -139,18 +139,18 @@ author_profile: true
 </section>
 
 <section class="mag-section">
-  <h2>Featured Conferences</h2>
+  <h2>Featured Talks</h2>
   <div class="mag-grid">
-    {% assign items = site.conferences | where: "featured", true | sort: "featured_rank" %}
+    {% assign items = site.talks | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% assign kicker = "Conference / Talk" %}
+      {% assign kicker = "Talk" %}
       {% capture meta %}{{ item.location }}{% if item.date %} · {{ item.date | date: "%d/%m/%Y" }}{% endif %}{% endcapture %}
       {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
       {{ render_card }}
     {% endfor %}
   </div>
   <p style="margin-top:.8rem;">
-    <a class="mag-btn secondary" href="{{ '/conferences/' | relative_url }}">Vedi la lista completa dei convegni</a>
+    <a class="mag-btn secondary" href="{{ '/talks/' | relative_url }}">Vedi la lista completa dei talks</a>
   </p>
 </section>
 
