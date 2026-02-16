@@ -10,8 +10,8 @@
 .mag-btn.secondary:hover{background:#f3f4f6;color:#000}
 .mag-section{margin-top:1.6rem}
 .mag-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
-.mag-card{padding:1rem;border:1px solid #e5e7eb;border-radius:16px;background:#fff;transition:all .25s ease;position:relative;overflow:hidden}
-.mag-card::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.02),rgba(0,0,0,.04));opacity:0;transition:opacity .25s ease}
+.mag-card{padding:1rem;border:1px solid #e5e7eb;border-radius:16px;background:#fff;transition:all .25s ease;position:relative;overflow:hidden;z-index: 1}
+.mag-card::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:linear-gradient(135deg,rgba(0,0,0,.02),rgba(0,0,0,.04));opacity:0;transition:opacity .25s ease}
 .mag-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
 .mag-card:hover::before{opacity:1}
 .mag-card a{text-decoration:none}
