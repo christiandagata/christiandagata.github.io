@@ -9,7 +9,7 @@
 :root{
   --mag-bg: transparent;
 
-  --mag-surface:#fffaf2;
+  --mag-surface:#ffffff;
   --mag-surface-2:rgba(0,0,0,.03);
 
   --mag-text:rgba(0,0,0,.90);
@@ -85,7 +85,7 @@ html[data-theme="dark"]{
 }
 
 html[data-theme="light"]{
-  --mag-surface:#fffaf2;
+  --mag-surface:#ffffff;
   --mag-surface-2:rgba(0,0,0,.03);
 
   --mag-text:rgba(0,0,0,.90);
