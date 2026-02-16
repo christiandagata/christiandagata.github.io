@@ -26,25 +26,25 @@ author:
 collections:
   books:
     output: true
-    permalink: /book/:path/
+    permalink: /books/:path/
   software:
     output: true
     permalink: /software/:path/
   datasets:
     output: true
-    permalink: /dataset/:path/
+    permalink: /datasets/:path/
   activity:
     output: true
     permalink: /activity/:path/
   associations:
     output: true
-    permalink: /association/:path/
+    permalink: /associations/:path/
   digital_editions:
     output: true
-    permalink: /edition/:path/
+    permalink: /digital-editions/:path/
   talks:
     output: true
     permalink: /talks/:path/
   publications:
     output: true
-    permalink: /publication/:path/
+    permalink: /publications/:path/
