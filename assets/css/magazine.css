@@ -26,21 +26,42 @@
   --mag-btn-secondary-border:#e5e7eb;
   --mag-btn-secondary-bg-hover:#f3f4f6;
   --mag-btn-secondary-fg-hover:#111827;
+
+  /* Card overlay */
+  --mag-overlay: linear-gradient(135deg,rgba(0,0,0,.02),rgba(0,0,0,.04));
 }
 
 /* =========================
-   DARK mode triggers
-   - In your site: data-theme is NULL in light
-     and becomes "$1" in dark, so we treat:
-       "any data-theme that is not light" as dark.
+   AUTO DARK (browser/OS preference)
+   Applies ONLY when user did not force a theme via data-theme
    ========================= */
-html[data-theme]:not([data-theme="light"]),
-body[data-theme]:not([data-theme="light"]),
-html.dark,
-body.dark,
-.dark-mode,
-html.theme-dark,
-body.theme-dark{
+@media (prefers-color-scheme: dark){
+  html:not([data-theme="light"]):not([data-theme="dark"]) :root{
+    --mag-surface:rgba(255,255,255,.06);
+    --mag-surface-2:rgba(255,255,255,.08);
+
+    --mag-text:rgba(255,255,255,.92);
+    --mag-muted:rgba(255,255,255,.70);
+
+    --mag-border:rgba(255,255,255,.14);
+    --mag-shadow:0 10px 30px rgba(0,0,0,.35);
+
+    --mag-btn-border:rgba(255,255,255,.55);
+    --mag-btn-bg-hover:rgba(255,255,255,.14);
+    --mag-btn-fg-hover:rgba(255,255,255,.95);
+
+    --mag-btn-secondary-border:rgba(255,255,255,.22);
+    --mag-btn-secondary-bg-hover:rgba(255,255,255,.10);
+    --mag-btn-secondary-fg-hover:rgba(255,255,255,.95);
+
+    --mag-overlay: linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.10));
+  }
+}
+
+/* =========================
+   MANUAL OVERRIDE (if present)
+   ========================= */
+html[data-theme="dark"]{
   --mag-surface:rgba(255,255,255,.06);
   --mag-surface-2:rgba(255,255,255,.08);
 
@@ -57,16 +78,12 @@ body.theme-dark{
   --mag-btn-secondary-border:rgba(255,255,255,.22);
   --mag-btn-secondary-bg-hover:rgba(255,255,255,.10);
   --mag-btn-secondary-fg-hover:rgba(255,255,255,.95);
+
+  --mag-overlay: linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.10));
 }
 
-/* Optional: if someday the toggle sets data-theme="light" explicitly */
-html[data-theme="light"],
-body[data-theme="light"],
-html.light,
-body.light,
-.light-mode,
-html.theme-light,
-body.theme-light{
+html[data-theme="light"]{
+  /* (optional) explicit light — identical to :root, but keeps intent clear */
   --mag-surface:#ffffff;
   --mag-surface-2:rgba(0,0,0,.03);
   --mag-text:rgba(0,0,0,.90);
@@ -81,6 +98,8 @@ body.theme-light{
   --mag-btn-secondary-border:#e5e7eb;
   --mag-btn-secondary-bg-hover:#f3f4f6;
   --mag-btn-secondary-fg-hover:#111827;
+
+  --mag-overlay: linear-gradient(135deg,rgba(0,0,0,.02),rgba(0,0,0,.04));
 }
 
 /* =========================
@@ -154,22 +173,10 @@ body.theme-light{
   inset:0;
   pointer-events:none;
   z-index:0;
-  background:linear-gradient(135deg,rgba(0,0,0,.02),rgba(0,0,0,.04));
+  background:var(--mag-overlay);
   opacity:0;
   transition:opacity .25s ease;
 }
-
-/* Dark overlay variant (same trigger logic as tokens) */
-html[data-theme]:not([data-theme="light"]) .mag-card::before,
-body[data-theme]:not([data-theme="light"]) .mag-card::before,
-html.dark .mag-card::before,
-body.dark .mag-card::before,
-.dark-mode .mag-card::before,
-html.theme-dark .mag-card::before,
-body.theme-dark .mag-card::before{
-  background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.10));
-}
-
 .mag-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
 .mag-card:hover::before{opacity:1}
 .mag-card > *{position:relative;z-index:1}

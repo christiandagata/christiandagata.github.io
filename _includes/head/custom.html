@@ -14,4 +14,37 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<script>
+(function () {
+  try {
+    const root = document.documentElement;
+
+    // Read saved preference (if any)
+    const stored = localStorage.getItem("theme"); // "light" | "dark" | null
+    if (stored === "light" || stored === "dark") {
+      root.setAttribute("data-theme", stored);
+      return;
+    }
+
+    // Otherwise follow browser/OS preference
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    root.setAttribute("data-theme", prefersDark ? "dark" : "light");
+
+    // Keep in sync if the OS theme changes (only if user didn't override)
+    if (window.matchMedia) {
+      const mq = window.matchMedia("(prefers-color-scheme: dark)");
+      mq.addEventListener?.("change", (e) => {
+        const stored2 = localStorage.getItem("theme");
+        if (stored2 === "light" || stored2 === "dark") return;
+        root.setAttribute("data-theme", e.matches ? "dark" : "light");
+      });
+    }
+
+    // Safety: fix the "$1" bug if it appears
+    const t = root.getAttribute("data-theme");
+    if (t && t !== "light" && t !== "dark") root.setAttribute("data-theme", "dark");
+  } catch (e) {}
+})();
+</script>
+
 <!-- end custom head snippets -->
