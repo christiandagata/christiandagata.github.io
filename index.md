@@ -52,23 +52,33 @@ author_profile: true
 
 <section class="mag-section">
   <h2>Featured Publications</h2>
-  <div class="mag-grid">
+
+  <ul class="mag-list">
     {% assign items = site.publications | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% capture meta %}
-        {% if item.venue %}{{ item.venue }}{% endif %}{% if item.date %} · {{ item.date | date: "%Y" }}{% endif %}
-        {% if item.doi %} · <img class="doi-badge" alt="DOI" src="https://img.shields.io/badge/DOI-{{ item.doi | uri_escape }}-blue">{% endif %}
-      {% endcapture %}
-      {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
+      <li>
+        <div class="mag-date">
+          {% if item.date %}{{ item.date | date: "%Y" }}{% endif %}
+        </div>
 
-      <div class="mag-card">
-        <p class="mag-kicker">Publication</p>
-        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
-        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
-      </div>
+        <div class="mag-main">
+          <div>
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% if item.doi %}
+              <img class="doi-badge" alt="DOI" src="https://img.shields.io/badge/DOI-{{ item.doi | uri_escape }}-blue">
+            {% endif %}
+          </div>
+          <div class="mag-sub">
+            {% if item.venue %}{{ item.venue }}{% endif %}
+          </div>
+        </div>
+
+        <div class="mag-right">
+          {% if item.doi %}<a href="https://doi.org/{{ item.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+        </div>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 
   <p style="margin-top:.8rem;">
     <a class="mag-btn secondary" href="{{ '/publications/' | relative_url }}">Vedi la lista completa delle pubblicazioni</a>
@@ -76,7 +86,7 @@ author_profile: true
 </section>
 
 <section class="mag-section">
-  <h2>Featured Software</h2>
+  <h2>Sito web</h2>
   <div class="mag-grid">
     {% assign items = site.software | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
@@ -160,22 +170,32 @@ author_profile: true
 
 <section class="mag-section">
   <h2>Featured Talks</h2>
-  <div class="mag-grid">
+
+  <ul class="mag-list">
     {% assign items = site.talks | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% capture meta %}
-        {% if item.venue %}{{ item.venue }} · {% endif %}{{ item.location }}{% if item.date %} · {{ item.date | date: "%d/%m/%Y" }}{% endif %}
-      {% endcapture %}
-      {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
+      <li>
+        <div class="mag-date">
+          {% if item.date %}{{ item.date | date: "%d/%m/%Y" }}{% endif %}
+        </div>
 
-      <div class="mag-card">
-        <p class="mag-kicker">Talk</p>
-        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
-        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
-      </div>
+        <div class="mag-main">
+          <div>
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          </div>
+          <div class="mag-sub">
+            {% if item.venue %}{{ item.venue }} · {% endif %}{{ item.location }}
+          </div>
+        </div>
+
+        <div class="mag-right">
+          {% if item.slidesurl and item.slidesurl != "" %}
+            <a href="{{ item.slidesurl }}" target="_blank" rel="noopener">Slides</a>
+          {% endif %}
+        </div>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 
   <p style="margin-top:.8rem;">
     <a class="mag-btn secondary" href="{{ '/talks/' | relative_url }}">Vedi la lista completa dei talks</a>

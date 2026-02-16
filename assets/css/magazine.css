@@ -21,4 +21,14 @@
 .mag-meta{font-size:.9rem;opacity:.75;margin-top:.35rem}
 .mag-excerpt{margin-top:.6rem;font-size:.95rem;line-height:1.5}
 .doi-badge{vertical-align:middle;margin-left:.4rem}
+.mag-list{margin:0;padding:0;list-style:none;border:1px solid #e5e7eb;border-radius:16px;background:#fff;overflow:hidden}
+.mag-list li{display:flex;gap:.8rem;align-items:baseline;padding:.75rem 1rem;border-top:1px solid #e5e7eb}
+.mag-list li:first-child{border-top:none}
+.mag-list li:hover{background:rgba(0,0,0,.03)}
+.mag-list .mag-date{flex:0 0 auto;min-width:74px;font-size:.9rem;opacity:.7}
+.mag-list .mag-main{flex:1 1 auto}
+.mag-list .mag-main a{text-decoration:none}
+.mag-list .mag-main a:hover{text-decoration:underline}
+.mag-list .mag-sub{font-size:.9rem;opacity:.75;margin-top:.15rem}
+.mag-list .mag-right{flex:0 0 auto;font-size:.85rem;opacity:.8}
 @media (max-width:720px){.mag-hero{grid-template-columns:1fr}.mag-grid{grid-template-columns:1fr}}
