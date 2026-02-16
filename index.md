@@ -104,34 +104,40 @@ author_profile: true
     {% endfor %}
   </div>
 
-  <h3 style="margin-top:1rem;">Ricerca</h3>
-  <div class="mag-grid">
-    {% assign research_items = featured_activity | where: "activity_type", "Research" %}
-    {% for item in research_items limit:10 %}
-      {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
-      {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-      <div class="mag-card">
-        <p class="mag-kicker">Research</p>
-        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
-        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+  <div class="mag-split">
+    <div>
+      <h3>Ricerca</h3>
+      <div class="mag-grid mag-grid--single">
+        {% assign research_items = featured_activity | where: "activity_type", "Research" %}
+        {% for item in research_items limit:10 %}
+          {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
+          {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
+          <div class="mag-card">
+            <p class="mag-kicker">Research</p>
+            <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+            {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
+            {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
-  </div>
+    </div>
 
-  <h3 style="margin-top:1rem;">Formazione</h3>
-  <div class="mag-grid">
-    {% assign training_items = featured_activity | where: "activity_type", "Training" %}
-    {% for item in training_items limit:10 %}
-      {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
-      {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-      <div class="mag-card">
-        <p class="mag-kicker">Formazione</p>
-        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
-        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+    <div>
+      <h3>Formazione</h3>
+      <div class="mag-grid mag-grid--single">
+        {% assign training_items = featured_activity | where: "activity_type", "Training" %}
+        {% for item in training_items limit:10 %}
+          {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
+          {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
+          <div class="mag-card">
+            <p class="mag-kicker">Formazione</p>
+            <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+            {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
+            {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
   </div>
 
   <p style="margin-top:.8rem; display:flex; gap:.6rem; flex-wrap:wrap;">

@@ -159,6 +159,14 @@ html[data-theme="light"]{
 
 /* GRID + CARDS */
 .mag-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.mag-grid--single{grid-template-columns:1fr}
+.mag-split{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1rem;
+  align-items:start;
+  margin-top:1rem;
+}
 
 .mag-card{
   padding:1rem;
@@ -233,4 +241,5 @@ html[data-theme="light"]{
 @media (max-width:720px){
   .mag-hero{grid-template-columns:1fr}
   .mag-grid{grid-template-columns:1fr}
+  .mag-split{grid-template-columns:1fr}
 }

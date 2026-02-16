@@ -3,7 +3,7 @@ title: "Curriculum (highlights)"
 collection: activity
 layout: single
 date: 2023-06-21
-activity_type: "Research"
+activity_type: "Training"
 period: "2018 – 2023"
 featured: true
 featured_rank: 4
