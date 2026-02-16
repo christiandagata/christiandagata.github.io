@@ -1,0 +1,18 @@
+            <div class="mag-card">
+            <p class="mag-kicker">{{ include.kicker }}</p>
+            
+            {% if include.item and include.item.url %}
+            <h3 class="mag-title">
+                <a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a>
+            </h3>
+            {% else %}
+            <h3 class="mag-title">{{ include.title }}</h3>
+            {% endif %}
+            
+            {% if include.meta and include.meta != "" %}
+            <div class="mag-meta">{{ include.meta }}</div>
+            {% endif %}
+            
+            {% if include.excerpt and include.excerpt != "" %}
+            <div class="mag-excerpt">{{ include.excerpt }}</div>
+            {% endif %}

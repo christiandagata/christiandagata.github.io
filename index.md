@@ -50,29 +50,26 @@ author_profile: true
   </section>
 {% endif %}
 
-{% capture render_card %}
-<div class="mag-card">
-  <p class="mag-kicker">{{ kicker }}</p>
-  <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-  {% if meta %}<div class="mag-meta">{{ meta }}</div>{% endif %}
-  {% if excerpt %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
-</div>
-{% endcapture %}
-
 <section class="mag-section">
   <h2>Featured Publications</h2>
   <div class="mag-grid">
     {% assign items = site.publications | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% assign kicker = "Publication" %}
       {% capture meta %}
         {% if item.venue %}{{ item.venue }}{% endif %}{% if item.date %} · {{ item.date | date: "%Y" }}{% endif %}
         {% if item.doi %} · <img class="doi-badge" alt="DOI" src="https://img.shields.io/badge/DOI-{{ item.doi | uri_escape }}-blue">{% endif %}
       {% endcapture %}
       {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-      {{ render_card }}
+
+      <div class="mag-card">
+        <p class="mag-kicker">Publication</p>
+        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
+        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+      </div>
     {% endfor %}
   </div>
+
   <p style="margin-top:.8rem;">
     <a class="mag-btn secondary" href="{{ '/publications/' | relative_url }}">Vedi la lista completa delle pubblicazioni</a>
   </p>
@@ -83,10 +80,17 @@ author_profile: true
   <div class="mag-grid">
     {% assign items = site.software | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% assign kicker = "Software" %}
-      {% capture meta %}{% if item.github %}<a href="{{ item.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}{% endcapture %}
+      {% capture meta %}
+        {% if item.github %}<a href="{{ item.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% endcapture %}
       {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-      {{ render_card }}
+
+      <div class="mag-card">
+        <p class="mag-kicker">Software</p>
+        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
+        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+      </div>
     {% endfor %}
   </div>
 </section>
@@ -96,12 +100,17 @@ author_profile: true
   <div class="mag-grid">
     {% assign items = site.datasets | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% assign kicker = "Dataset" %}
       {% capture meta %}
         {% if item.doi %}DOI: {{ item.doi }} · <img class="doi-badge" alt="DOI" src="https://img.shields.io/badge/DOI-{{ item.doi | uri_escape }}-blue">{% endif %}
       {% endcapture %}
       {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-      {{ render_card }}
+
+      <div class="mag-card">
+        <p class="mag-kicker">Dataset</p>
+        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
+        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+      </div>
     {% endfor %}
   </div>
 </section>
@@ -111,12 +120,18 @@ author_profile: true
   <div class="mag-grid">
     {% assign items = site.activity | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% assign kicker = item.activity_type | default: "Activity" %}
       {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
       {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-      {{ render_card }}
+
+      <div class="mag-card">
+        <p class="mag-kicker">{{ item.activity_type | default: "Activity" }}</p>
+        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
+        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+      </div>
     {% endfor %}
   </div>
+
   <p style="margin-top:.8rem; display:flex; gap:.6rem; flex-wrap:wrap;">
     <a class="mag-btn secondary" href="{{ '/activity/' | relative_url }}">Vedi la lista completa delle attività</a>
     <a class="mag-btn secondary" href="{{ '/activity/#teaching' | relative_url }}">Teaching</a>
@@ -130,10 +145,15 @@ author_profile: true
   <div class="mag-grid">
     {% assign items = site.associations | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% assign kicker = "Association / Editorial" %}
       {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
       {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-      {{ render_card }}
+
+      <div class="mag-card">
+        <p class="mag-kicker">Association / Editorial</p>
+        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
+        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+      </div>
     {% endfor %}
   </div>
 </section>
@@ -143,12 +163,20 @@ author_profile: true
   <div class="mag-grid">
     {% assign items = site.talks | where: "featured", true | sort: "featured_rank" %}
     {% for item in items limit:10 %}
-      {% assign kicker = "Talk" %}
-      {% capture meta %}{{ item.location }}{% if item.date %} · {{ item.date | date: "%d/%m/%Y" }}{% endif %}{% endcapture %}
+      {% capture meta %}
+        {% if item.venue %}{{ item.venue }} · {% endif %}{{ item.location }}{% if item.date %} · {{ item.date | date: "%d/%m/%Y" }}{% endif %}
+      {% endcapture %}
       {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-      {{ render_card }}
+
+      <div class="mag-card">
+        <p class="mag-kicker">Talk</p>
+        <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
+        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+      </div>
     {% endfor %}
   </div>
+
   <p style="margin-top:.8rem;">
     <a class="mag-btn secondary" href="{{ '/talks/' | relative_url }}">Vedi la lista completa dei talks</a>
   </p>
