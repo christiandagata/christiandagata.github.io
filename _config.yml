@@ -23,7 +23,7 @@ repository               : "christiandagata/christiandagata.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/profile.jpg"
+  avatar           : "profile.jpg"
   name             : "Christian D'Agata"
   pronouns         : # example: "she/her"  
   bio              : "Assegnista di ricerca presso l’Università degli Studi di Catania nel contesto del progetto PNRR <em>Verismo Digitale</em>
