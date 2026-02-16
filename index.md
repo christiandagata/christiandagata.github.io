@@ -20,7 +20,7 @@ author_profile: true
       </div>
     {% endif %}
     <div>
-      <p class="mag-kicker">Ultimo libro pubblicato</p>
+      <p class="mag-kicker">In evidenza</p>
       <h2 style="margin-bottom:.2rem;">
         <a href="{{ fb.url | relative_url }}">{{ fb.title }}</a>
       </h2>
@@ -41,7 +41,7 @@ author_profile: true
 
         {% if fb.buy_links %}
           {% for l in fb.buy_links %}
-            <a class="mag-btn secondary" href="{{ l.url }}" target="_blank" rel="noopener">Acquista (eliphi.fr)</a>
+            <a class="mag-btn secondary" href="{{ l.url }}" target="_blank" rel="noopener">Acquista</a>
             {% break %}
           {% endfor %}
         {% endif %}

@@ -28,11 +28,11 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Assegnista di ricerca presso l’Università degli Studi di Catania nel contesto del progetto PNRR <em>Verismo Digitale</em>
     (Filologia e lessicografia digitale dei testi della letteratura italiana dell’Otto/Novecento).<br>
-    <strong>Interessi:</strong> TEI-XML, edizioni scientifiche digitali, hyperedizioni, DSL, NLP/LLM."
-  location         : "Earth"
+    <strong>Interessi:</strong> Critica computazionale della letteratura, edizioni scientifiche digitali e hyperedizioni, Domain Specific Language, Large Language Model, Nature Language Processing, codifica XML-TEI."
+  location         : "Catania"
   employer         : "Università di Catania"
   uri              : "www.variantidellarosa.it"
-  email            : "none@example.org" 
+  email            : "christian.dagata@unict.it" 
 
   # Academic websites
   academia         : # URL
@@ -43,7 +43,7 @@ author:
   orcid            : "https://orcid.org/yourorcidurl"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
