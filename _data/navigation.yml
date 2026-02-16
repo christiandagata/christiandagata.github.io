@@ -1,21 +1,21 @@
 main:
   - title: "Home"
     url: /
-  - title: "Publications"
+  - title: "Pubblicazioni"
     url: /publications/
-  - title: "Books"
+  - title: "Libri"
     url: /books/
-  - title: "Software"
-    url: /software/
-  - title: "Datasets"
+  - title: "Dataset"
     url: /datasets/
-  - title: "Digital Editions"
+  - title: "Edizioni digitali"
     url: /digital-editions/
-  - title: "Activity"
+  - title: "Attività"
     url: /activity/
   - title: "Talks"
     url: /talks/
-  - title: "Associations"
+  - title: "Associazioni"
     url: /associations/
   - title: "CV"
     url: /cv/
+  - title: "Sito web"
+    url: /software/
