@@ -3,7 +3,7 @@ title: "Nel nome della rosa. Apocalisse, genesi, varianti"
 collection: books
 layout: book
 date: 2025-01-01
-publisher: "Eliphi – Éditions de linguistique et de philologie, Strasbourg"
+publisher: "Eliphi (Éditions de linguistique et de philologie), Strasbourg"
 
 cover: /images/books/copertinamonografianome.jpg
 index_pdf: /files/books/indicemonografianome.pdf
@@ -11,7 +11,7 @@ index_pdf: /files/books/indicemonografianome.pdf
 featured: true
 featured_rank: 1
 
-synopsis_short: "Un viaggio nell’origine apocalittica del Nome della rosa: dall’intuizione di Eco sui movimenti medievali fino alla riscrittura del 2012, tra palinsesti, varianti e lunga maturazione d’autore."
+synopsis_short: "Un viaggio nella genesi apocalittica del Nome della rosa: dall’intuizione di Eco sui movimenti eretici medievali fino alla riscrittura del 2012, tra palinsesti, varianti e intertesti."
 
 buy_links:
   - label: "Editore (Eliphi)"
