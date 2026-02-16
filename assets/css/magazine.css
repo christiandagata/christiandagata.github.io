@@ -1,135 +1,59 @@
-.mag-wrap{display:grid;gap:1.6rem}
-.mag-hero{display:grid;grid-template-columns:260px 1fr;gap:1.6rem;align-items:start;padding:1.2rem;border:1px solid #e5e7eb;border-radius:16px;background:#fff;transition:all .25s ease}
-.mag-hero:hover{box-shadow:0 12px 30px rgba(0,0,0,.08);transform:translateY(-3px)}
-.mag-hero img{width:100%;border-radius:14px;border:1px solid #e5e7eb;transition:transform .3s ease}
-.mag-hero:hover img{transform:scale(1.02)}
-.mag-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
-.mag-btn{display:inline-block;padding:.45rem .9rem;border:1px solid #111827;border-radius:999px;text-decoration:none;font-size:.9rem;transition:all .2s ease}
-.mag-btn:hover{background:#111827;color:#fff}
-.mag-btn.secondary{border-color:#e5e7eb}
-.mag-btn.secondary:hover{background:#f3f4f6;color:#000}
-.mag-section{margin-top:1.6rem}
-.mag-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
-.mag-card{padding:1rem;border:1px solid #e5e7eb;border-radius:16px;background:#fff;transition:all .25s ease;position:relative;overflow:hidden;z-index: 1}
-.mag-card::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:linear-gradient(135deg,rgba(0,0,0,.02),rgba(0,0,0,.04));opacity:0;transition:opacity .25s ease}
-.mag-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
-.mag-card:hover::before{opacity:1}
-.mag-card a{text-decoration:none}
-.mag-card a:hover{text-decoration:underline}
-.mag-kicker{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;opacity:.6;margin:0 0 .4rem 0}
-.mag-title{margin:0}
-.mag-meta{font-size:.9rem;opacity:.75;margin-top:.35rem}
-.mag-excerpt{margin-top:.6rem;font-size:.95rem;line-height:1.5}
-.doi-badge{vertical-align:middle;margin-left:.4rem}
-.mag-list{margin:0;padding:0;list-style:none;border:1px solid #e5e7eb;border-radius:16px;background:#fff;overflow:hidden}
-.mag-list li{display:flex;gap:.8rem;align-items:baseline;padding:.75rem 1rem;border-top:1px solid #e5e7eb}
-.mag-list li:first-child{border-top:none}
-.mag-list li:hover{background:rgba(0,0,0,.03)}
-.mag-list .mag-date{flex:0 0 auto;min-width:74px;font-size:.9rem;opacity:.7}
-.mag-list .mag-main{flex:1 1 auto}
-.mag-list .mag-main a{text-decoration:none}
-.mag-list .mag-main a:hover{text-decoration:underline}
-.mag-list .mag-sub{font-size:.9rem;opacity:.75;margin-top:.15rem}
-.mag-list .mag-right{flex:0 0 auto;font-size:.85rem;opacity:.8}
 /* =========================
-   Magazine: color tokens
+   Magazine: base layout
+   ========================= */
+.mag-wrap{display:grid;gap:1.6rem}
+
+/* =========================
+   Color tokens
    ========================= */
 :root{
   --mag-bg: transparent;
+
   --mag-surface: #ffffff;
   --mag-surface-2: rgba(0,0,0,.03);
+
   --mag-text: rgba(0,0,0,.90);
   --mag-muted: rgba(0,0,0,.70);
+
   --mag-border: #e5e7eb;
   --mag-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+  /* Buttons */
+  --mag-btn-border: rgba(17,24,39,.9);
+  --mag-btn-bg-hover: rgba(17,24,39,.95);
+  --mag-btn-fg-hover: #ffffff;
+
+  --mag-btn-secondary-border: #e5e7eb;
+  --mag-btn-secondary-bg-hover: #f3f4f6;
+  --mag-btn-secondary-fg-hover: #111827;
 }
 
-/* Dark mode triggers (cover multiple theme implementations) */
+/* Dark mode triggers (cover multiple implementations) */
 html[data-theme="dark"],
 body[data-theme="dark"],
 html.dark,
 body.dark,
 .dark-mode,
 [data-theme="dark"]{
-  --mag-bg: transparent;
   --mag-surface: rgba(255,255,255,.06);
   --mag-surface-2: rgba(255,255,255,.08);
+
   --mag-text: rgba(255,255,255,.92);
   --mag-muted: rgba(255,255,255,.70);
+
   --mag-border: rgba(255,255,255,.14);
   --mag-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+  --mag-btn-border: rgba(255,255,255,.55);
+  --mag-btn-bg-hover: rgba(255,255,255,.14);
+  --mag-btn-fg-hover: rgba(255,255,255,.95);
+
+  --mag-btn-secondary-border: rgba(255,255,255,.22);
+  --mag-btn-secondary-bg-hover: rgba(255,255,255,.10);
+  --mag-btn-secondary-fg-hover: rgba(255,255,255,.95);
 }
 
-/* =========================
-   Apply tokens
-   ========================= */
-.mag-wrap{
-  color: var(--mag-text);
-}
-
-/* HERO */
-.mag-hero{
-  background: var(--mag-surface);
-  border-color: var(--mag-border);
-  box-shadow: var(--mag-shadow);
-}
-.mag-hero .mag-kicker,
-.mag-hero .mag-meta{
-  color: var(--mag-muted);
-}
-
-/* CARD */
-.mag-card{
-  background: var(--mag-surface);
-  border-color: var(--mag-border);
-  box-shadow: var(--mag-shadow);
-  color: var(--mag-text);
-}
-.mag-card .mag-kicker,
-.mag-card .mag-meta,
-.mag-card .mag-excerpt{
-  color: var(--mag-muted);
-}
-
-/* overlay/hover layer should not force light colors */
-.mag-card::before{
-  background: var(--mag-surface-2);
-}
-
-/* Links inside magazine */
-.mag-wrap a{
-  color: inherit;
-}
-.mag-wrap a:hover{
-  color: inherit;
-}
-
-/* LIST (Publications / Talks compact lists) */
-.mag-list{
-  background: var(--mag-surface);
-  border-color: var(--mag-border);
-  color: var(--mag-text);
-}
-.mag-list li{
-  border-top-color: var(--mag-border);
-}
-.mag-list li:hover{
-  background: var(--mag-surface-2);
-}
-.mag-list .mag-date,
-.mag-list .mag-sub,
-.mag-list .mag-right{
-  color: var(--mag-muted);
-}
-
-/* Buttons (keep readable in dark) */
-.mag-btn{
-  border-color: var(--mag-border);
-}
-.mag-btn.secondary{
-  background: transparent;
-}
-@media (max-width:720px){.mag-hero{grid-template-columns:1fr}.mag-grid{grid-template-columns:1fr}}
+/* If OS prefers dark but user did NOT force light */
 @media (prefers-color-scheme: dark){
   html:not([data-theme="light"]) :root,
   :root:not([data-theme="light"]) {
@@ -139,24 +63,174 @@ body.dark,
     --mag-muted: rgba(255,255,255,.70);
     --mag-border: rgba(255,255,255,.14);
     --mag-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+    --mag-btn-border: rgba(255,255,255,.55);
+    --mag-btn-bg-hover: rgba(255,255,255,.14);
+    --mag-btn-fg-hover: rgba(255,255,255,.95);
+
+    --mag-btn-secondary-border: rgba(255,255,255,.22);
+    --mag-btn-secondary-bg-hover: rgba(255,255,255,.10);
+    --mag-btn-secondary-fg-hover: rgba(255,255,255,.95);
   }
 }
 
-/* =========================================
-   FORCE LIGHT MODE TOKENS when light is selected
-   (prevents prefers-color-scheme from overriding)
-   ========================================= */
+/* Force LIGHT tokens when light is explicitly selected */
 html[data-theme="light"],
 body[data-theme="light"],
 html.theme-light,
 body.theme-light,
 .light-mode,
 [data-theme="light"]{
-  --mag-bg: transparent;
   --mag-surface: #ffffff;
   --mag-surface-2: rgba(0,0,0,.03);
   --mag-text: rgba(0,0,0,.90);
   --mag-muted: rgba(0,0,0,.70);
   --mag-border: #e5e7eb;
   --mag-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+  --mag-btn-border: rgba(17,24,39,.9);
+  --mag-btn-bg-hover: rgba(17,24,39,.95);
+  --mag-btn-fg-hover: #ffffff;
+
+  --mag-btn-secondary-border: #e5e7eb;
+  --mag-btn-secondary-bg-hover: #f3f4f6;
+  --mag-btn-secondary-fg-hover: #111827;
+}
+
+/* =========================
+   Apply tokens
+   ========================= */
+.mag-wrap{color:var(--mag-text)}
+
+/* HERO */
+.mag-hero{
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:1.6rem;
+  align-items:start;
+  padding:1.2rem;
+  border:1px solid var(--mag-border);
+  border-radius:16px;
+  background:var(--mag-surface);
+  transition:all .25s ease;
+}
+.mag-hero:hover{box-shadow:0 12px 30px rgba(0,0,0,.08);transform:translateY(-3px)}
+.mag-hero img{
+  width:100%;
+  border-radius:14px;
+  border:1px solid var(--mag-border);
+  transition:transform .3s ease
+}
+.mag-hero:hover img{transform:scale(1.02)}
+.mag-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+.mag-hero .mag-kicker,
+.mag-hero .mag-meta{color:var(--mag-muted)}
+
+/* BUTTONS */
+.mag-btn{
+  display:inline-block;
+  padding:.45rem .9rem;
+  border:1px solid var(--mag-btn-border);
+  border-radius:999px;
+  text-decoration:none;
+  font-size:.9rem;
+  transition:all .2s ease;
+  color:inherit;
+  background:transparent;
+}
+.mag-btn:hover{background:var(--mag-btn-bg-hover);color:var(--mag-btn-fg-hover)}
+.mag-btn.secondary{
+  border-color:var(--mag-btn-secondary-border);
+}
+.mag-btn.secondary:hover{
+  background:var(--mag-btn-secondary-bg-hover);
+  color:var(--mag-btn-secondary-fg-hover);
+}
+
+/* SECTIONS */
+.mag-section{margin-top:1.6rem}
+
+/* GRID + CARDS */
+.mag-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+
+.mag-card{
+  padding:1rem;
+  border:1px solid var(--mag-border);
+  border-radius:16px;
+  background:var(--mag-surface);
+  transition:all .25s ease;
+  position:relative;
+  overflow:hidden;
+  z-index:1;
+  color:var(--mag-text);
+}
+.mag-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  background:linear-gradient(135deg,rgba(0,0,0,.02),rgba(0,0,0,.04));
+  opacity:0;
+  transition:opacity .25s ease;
+}
+html[data-theme="dark"] .mag-card::before,
+body[data-theme="dark"] .mag-card::before,
+html.dark .mag-card::before,
+body.dark .mag-card::before,
+.dark-mode .mag-card::before,
+[data-theme="dark"] .mag-card::before{
+  background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.10));
+}
+
+.mag-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.mag-card:hover::before{opacity:1}
+.mag-card > *{position:relative;z-index:1}
+
+.mag-card a{text-decoration:none;color:inherit}
+.mag-card a:hover{text-decoration:underline}
+
+.mag-kicker{
+  font-size:.85rem;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  margin:0 0 .4rem 0;
+  color:var(--mag-muted);
+}
+.mag-title{margin:0}
+.mag-meta{font-size:.9rem;margin-top:.35rem;color:var(--mag-muted)}
+.mag-excerpt{margin-top:.6rem;font-size:.95rem;line-height:1.5;color:var(--mag-muted)}
+.doi-badge{vertical-align:middle;margin-left:.4rem}
+
+/* LISTS (Publications / Talks) */
+.mag-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+  border:1px solid var(--mag-border);
+  border-radius:16px;
+  background:var(--mag-surface);
+  overflow:hidden;
+  color:var(--mag-text);
+}
+.mag-list li{
+  display:flex;
+  gap:.8rem;
+  align-items:baseline;
+  padding:.75rem 1rem;
+  border-top:1px solid var(--mag-border);
+}
+.mag-list li:first-child{border-top:none}
+.mag-list li:hover{background:var(--mag-surface-2)}
+.mag-list .mag-date{flex:0 0 auto;min-width:74px;font-size:.9rem;color:var(--mag-muted)}
+.mag-list .mag-main{flex:1 1 auto}
+.mag-list .mag-main a{text-decoration:none;color:inherit}
+.mag-list .mag-main a:hover{text-decoration:underline}
+.mag-list .mag-sub{font-size:.9rem;margin-top:.15rem;color:var(--mag-muted)}
+.mag-list .mag-right{flex:0 0 auto;font-size:.85rem;color:var(--mag-muted)}
+
+/* Responsive */
+@media (max-width:720px){
+  .mag-hero{grid-template-columns:1fr}
+  .mag-grid{grid-template-columns:1fr}
 }
