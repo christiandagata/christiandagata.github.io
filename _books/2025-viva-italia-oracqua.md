@@ -7,7 +7,7 @@ publisher: "La scuola di Pitagora, Napoli"
 featured: true
 featured_rank: 2
 
-cover: /images/books/copertina-viva-oracqua.jpg   # metti qui il path reale
+cover: /images/books/copertina-viva-oracqua.png 
 # index_pdf: /files/books/indice-viva-oracqua.pdf  # opzionale
 synopsis_short: "Studio e materiali preparatori sui Viceré..."
 synopsis: "..."
