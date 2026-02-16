@@ -3,9 +3,8 @@ url: https://christiandagata.github.io
 baseurl: ''
 author:
   name: Christian D'Agata
-  avatar: /images/profile.png
-  bio: 'Assegnista di ricerca presso l’Università degli Studi di Catania (20 marzo
-    2024 – 19 marzo 2026) nel contesto del progetto PNRR <em>Verismo Digitale</em>
+  avatar: /images/profile.jpg
+  bio: 'Assegnista di ricerca presso l’Università degli Studi di Catania nel contesto del progetto PNRR <em>Verismo Digitale</em>
     (Filologia e lessicografia digitale dei testi della letteratura italiana dell’Otto/Novecento).<br>
     <strong>Interessi:</strong> TEI-XML, edizioni scientifiche digitali, hyperedizioni,
     DSL, NLP/LLM.

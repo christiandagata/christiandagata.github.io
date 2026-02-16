@@ -5,7 +5,7 @@ layout: book
 date: 2025-01-01
 publisher: "Eliphi – Éditions de linguistique et de philologie, Strasbourg"
 
-cover: /images/books/copertinamonografianome.png
+cover: /images/books/copertinamonografianome.jpg
 index_pdf: /files/books/indicemonografianome.pdf
 
 featured: true
