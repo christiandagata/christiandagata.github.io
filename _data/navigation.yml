@@ -5,8 +5,6 @@ main:
     url: /publications/
   - title: "Libri"
     url: /books/
-  - title: "Dataset"
-    url: /datasets/
   - title: "Edizioni digitali"
     url: /digital-editions/
   - title: "Attività"
@@ -19,3 +17,5 @@ main:
     url: /cv/
   - title: "Sito web"
     url: /software/
+  - title: "Dataset"
+    url: /datasets/

@@ -173,6 +173,43 @@ author_profile: true
 </section>
 
 <section class="mag-section">
+  <h2>Edizioni digitali in evidenza</h2>
+
+  {% assign items = site.digital_editions | default: empty | where: "featured", true | sort: "featured_rank" %}
+  {% if items == empty %}
+    <p>Nessuna edizione digitale in evidenza al momento.</p>
+  {% else %}
+    <div class="mag-grid">
+      {% for item in items limit:6 %}
+        <div class="mag-card">
+          <p class="mag-kicker">Edizione digitale</p>
+          <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+
+          <div class="mag-meta">
+            {% if item.tech %}{{ item.tech }}{% endif %}
+            {% if item.date %}{% if item.tech %} · {% endif %}{{ item.date | date: "%Y" }}{% endif %}
+          </div>
+
+          {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
+          {% if excerpt %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+
+          <div class="mag-actions" style="margin-top:.7rem;">
+            <a class="mag-btn secondary" href="{{ item.url | relative_url }}">Scheda</a>
+            {% if item.link %}
+              <a class="mag-btn" href="{{ item.link }}" target="_blank" rel="noopener">Apri progetto</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <p style="margin-top:.8rem;">
+    <a class="mag-btn secondary" href="{{ '/digital-editions/' | relative_url }}">Vedi tutte le edizioni digitali</a>
+  </p>
+</section>
+
+<section class="mag-section">
   <h2>Associazioni e comitati editoriali</h2>
   <div class="mag-grid">
     {% assign items = site.associations | where: "featured", true | sort: "featured_rank" %}
