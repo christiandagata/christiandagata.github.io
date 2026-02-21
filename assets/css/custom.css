@@ -107,13 +107,13 @@ html[data-theme="dark"] .page__meta a {
 /* =========================
    Publications page rendered as Markdown list (/publications/)
    ========================= */
-.publications-list ul {
+.publications-index-page .page__content ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.publications-list li {
+.publications-index-page .page__content li {
   border: 1px solid rgba(0,0,0,.08);
   border-radius: 14px;
   padding: 0.9rem 1rem;
@@ -121,18 +121,18 @@ html[data-theme="dark"] .page__meta a {
   background: rgba(255,255,255,.85);
 }
 
-.publications-list li > a,
-.publications-list li > a:visited {
+.publications-index-page .page__content li > a,
+.publications-index-page .page__content li > a:visited {
   color: #0b2b1f;
   font-weight: 650;
   text-decoration: none;
 }
 
-.publications-list li > a:hover {
+.publications-index-page .page__content li > a:hover {
   text-decoration: underline;
 }
 
-.publications-list li a {
+.publications-index-page .page__content li a {
   color: #0b2b1f;
 }
 
@@ -158,14 +158,14 @@ html[data-theme="dark"] .page__meta a {
   text-decoration-color: rgba(11,43,31,.85);
 }
 
-html[data-theme="dark"] .publications-list li {
+html[data-theme="dark"] .publications-index-page .page__content li {
   border-color: rgba(255,255,255,.14);
   background: rgba(255,255,255,.06);
 }
 
-html[data-theme="dark"] .publications-list li > a,
-html[data-theme="dark"] .publications-list li > a:visited,
-html[data-theme="dark"] .publications-list li a {
+html[data-theme="dark"] .publications-index-page .page__content li > a,
+html[data-theme="dark"] .publications-index-page .page__content li > a:visited,
+html[data-theme="dark"] .publications-index-page .page__content li a {
   color: rgba(255,255,255,.92);
 }
 
