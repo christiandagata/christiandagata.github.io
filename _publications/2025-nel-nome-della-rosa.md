@@ -5,7 +5,7 @@ permalink: /publication/2025-nel-nome-della-rosa
 date: 2025-01-01
 pub_type: book
 venue: "Monografia"
-citation: "D’Agata, Christian. Nel Nome della rosa. Apocalissi, genesi, varianti. Eliphi, 2025. https://www.iris.unict.it/handle/20.500.11769/690909."
+citation: "D’Agata, C. Nel Nome della rosa. Apocalissi, genesi, varianti; Eliphi: Strasbourg, 2025."
 excerpt: "Studio sull’origine apocalittica del Nome della rosa e sulla lunga genesi testuale che conduce fino alla revisione del 2012."
 featured: true
 featured_rank: 1
