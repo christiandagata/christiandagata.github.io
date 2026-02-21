@@ -15,7 +15,7 @@ author_profile: true
   {% if p.citation or p.doi %}
   <div class="pub-entry-meta">
     {% if p.citation %}{{ p.citation }}{% endif %}
-    {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+    {% if p.doi %}{% if p.citation %} {% endif %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
   </div>
   {% endif %}
 {% endfor %}
@@ -23,10 +23,10 @@ author_profile: true
 ## Articles, chapters, proceedings
 {% for p in pub_other %}
 - [{{ p.title }}]({{ p.url | relative_url }})
-  {% if p.venue or p.date or p.citation or p.doi %}
+  {% if p.venue %} — {{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
+  {% if p.citation or p.doi %}
   <div class="pub-entry-meta">
-    {% if p.venue %}{{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
-    {% if p.citation %}<br>{{ p.citation }}{% endif %}
+    {% if p.citation %}{{ p.citation }}{% endif %}
     {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
   </div>
   {% endif %}
