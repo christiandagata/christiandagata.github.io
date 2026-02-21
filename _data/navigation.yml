@@ -3,8 +3,6 @@ main:
     url: /
   - title: "Pubblicazioni"
     url: /publications/
-  - title: "Libri"
-    url: /books/
   - title: "Edizioni digitali"
     url: /digital-editions/
   - title: "Attività"

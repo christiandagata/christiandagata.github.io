@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -8,13 +8,6 @@ redirect_from:
 ---
 
 {% include base_path %}
-
----
-title: "CV"
-permalink: /cv/
-layout: single
-author_profile: true
----
 
 ## Profilo
 Assegnista di ricerca presso l’Università degli Studi di Catania dal 20 marzo 2024 al 19 marzo 2026 nel contesto del progetto PNRR **Verismo Digitale** (*Filologia e lessicografia digitale dei testi della letteratura italiana dell’Otto/Novecento*).
