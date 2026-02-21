@@ -12,14 +12,22 @@ author_profile: true
 ## Books
 {% for p in pub_books %}
 - [{{ p.title }}]({{ p.url | relative_url }})
-  {% if p.citation %}{{ p.citation }}{% endif %}
-  {% if p.doi %}[DOI](https://doi.org/{{ p.doi }}){% endif %}
+  {% if p.citation or p.doi %}
+  <div class="pub-entry-meta">
+    {% if p.citation %}{{ p.citation }}{% endif %}
+    {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+  </div>
+  {% endif %}
 {% endfor %}
 
 ## Articles, chapters, proceedings
 {% for p in pub_other %}
 - [{{ p.title }}]({{ p.url | relative_url }})
-  {% if p.venue %} — {{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
-  {% if p.citation %}{{ p.citation }}{% endif %}
-  {% if p.doi %}[DOI](https://doi.org/{{ p.doi }}){% endif %}
+  {% if p.venue or p.date or p.citation or p.doi %}
+  <div class="pub-entry-meta">
+    {% if p.venue %}{{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
+    {% if p.citation %}<br>{{ p.citation }}{% endif %}
+    {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+  </div>
+  {% endif %}
 {% endfor %}

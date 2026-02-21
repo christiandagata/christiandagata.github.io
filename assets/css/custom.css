@@ -136,6 +136,19 @@ html[data-theme="dark"] .page__meta a {
   color: #0b2b1f;
 }
 
+.publications-index-page .page__content .pub-entry-meta {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(0,0,0,.72);
+}
+
+.publications-index-page .page__content .pub-entry-meta a {
+  color: #0b2b1f;
+  text-decoration: underline;
+  text-decoration-color: rgba(11,43,31,.35);
+}
+
 /* =========================
    Single publication page (/publication/...)
    ========================= */
@@ -167,6 +180,15 @@ html[data-theme="dark"] .publications-index-page .page__content li > a,
 html[data-theme="dark"] .publications-index-page .page__content li > a:visited,
 html[data-theme="dark"] .publications-index-page .page__content li a {
   color: rgba(255,255,255,.92);
+}
+
+html[data-theme="dark"] .publications-index-page .page__content .pub-entry-meta {
+  color: rgba(255,255,255,.72);
+}
+
+html[data-theme="dark"] .publications-index-page .page__content .pub-entry-meta a {
+  color: rgba(255,255,255,.92);
+  text-decoration-color: rgba(255,255,255,.35);
 }
 
 html[data-theme="dark"] .publication-page .page__content p[style*="font-size: smaller"] {
