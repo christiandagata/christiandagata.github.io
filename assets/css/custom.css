@@ -1,0 +1,105 @@
+/* =========================
+   Publications – clearer layout (keep full citation)
+   Works with AcademicPages / Minimal Mistakes archives
+   ========================= */
+
+/* The list container on /publications/ is usually .archive or .archive__item */
+.archive .archive__item,
+.archive__item {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.9rem;
+  background: rgba(255,255,255,.85);
+}
+
+/* Title */
+.archive__item-title a,
+.archive__item-title a:visited {
+  color: #0b2b1f;              /* verde scuro tendente al nero */
+  text-decoration: none;
+}
+.archive__item-title a:hover {
+  text-decoration: underline;
+}
+
+/* Make title a bit bigger */
+.archive__item-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem 0;
+  line-height: 1.25;
+}
+
+/* The “citation” block in AcademicPages is often .page__meta or .archive__item-excerpt (depending on include).
+   We style both safely. */
+.archive__item-excerpt,
+.page__meta,
+.page__meta p,
+.archive__item-excerpt p {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: rgba(0,0,0,.72);
+}
+
+/* Treat the citation as a clear block */
+.archive__item-excerpt,
+.page__meta {
+  margin-top: 0.45rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid rgba(11,43,31,.35);
+}
+
+/* If there is an excerpt AND a citation, reduce clutter */
+.archive__item-excerpt {
+  margin-bottom: 0;
+}
+
+/* Links inside citation: keep readable */
+.archive__item-excerpt a,
+.page__meta a {
+  color: #0b2b1f;
+  text-decoration: underline;
+  text-decoration-color: rgba(11,43,31,.35);
+}
+.archive__item-excerpt a:hover,
+.page__meta a:hover {
+  text-decoration-color: rgba(11,43,31,.85);
+}
+
+/* Optional: small “chips” look if the theme uses .btn for doi/pdf links */
+.archive__item .btn,
+.archive__item a.btn {
+  border-radius: 999px;
+  padding: .25rem .6rem;
+  font-size: .85rem;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .archive .archive__item,
+html[data-theme="dark"] .archive__item {
+  border-color: rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+}
+
+html[data-theme="dark"] .archive__item-title a,
+html[data-theme="dark"] .archive__item-title a:visited {
+  color: rgba(255,255,255,.92);
+}
+
+html[data-theme="dark"] .archive__item-excerpt,
+html[data-theme="dark"] .page__meta,
+html[data-theme="dark"] .page__meta p,
+html[data-theme="dark"] .archive__item-excerpt p {
+  color: rgba(255,255,255,.72);
+}
+
+html[data-theme="dark"] .archive__item-excerpt,
+html[data-theme="dark"] .page__meta {
+  border-left-color: rgba(255,255,255,.18);
+}
+
+html[data-theme="dark"] .archive__item-excerpt a,
+html[data-theme="dark"] .page__meta a {
+  color: rgba(255,255,255,.92);
+  text-decoration-color: rgba(255,255,255,.35);
+}
