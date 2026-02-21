@@ -13,7 +13,7 @@ main:
     url: /associations/
   - title: "CV"
     url: /cv/
-  - title: "Sito web"
+  - title: "Sito web/software"
     url: /software/
   - title: "Dataset"
     url: /datasets/
