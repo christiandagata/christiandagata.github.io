@@ -9,6 +9,8 @@ author_profile: true
 {% assign pub_books = pub_all | where: "pub_type", "book" %}
 {% assign pub_other = pub_all | where_exp: "p", "p.pub_type != 'book'" %}
 
+<div class="publications-list">
+
 ## Books
 {% for p in pub_books %}
 - [{{ p.title }}]({{ p.url | relative_url }})
@@ -23,3 +25,5 @@ author_profile: true
   {% if p.citation %}{{ p.citation }}{% endif %}
   {% if p.doi %}[DOI](https://doi.org/{{ p.doi }}){% endif %}
 {% endfor %}
+
+</div>

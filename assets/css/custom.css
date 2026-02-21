@@ -103,3 +103,78 @@ html[data-theme="dark"] .page__meta a {
   color: rgba(255,255,255,.92);
   text-decoration-color: rgba(255,255,255,.35);
 }
+
+/* =========================
+   Publications page rendered as Markdown list (/publications/)
+   ========================= */
+.publications-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.publications-list li {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.9rem;
+  background: rgba(255,255,255,.85);
+}
+
+.publications-list li > a,
+.publications-list li > a:visited {
+  color: #0b2b1f;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.publications-list li > a:hover {
+  text-decoration: underline;
+}
+
+.publications-list li a {
+  color: #0b2b1f;
+}
+
+/* =========================
+   Single publication page (/publication/...)
+   ========================= */
+.publication-page .page__content p[style*="font-size: smaller"] {
+  margin-top: 0.9rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid rgba(11,43,31,.35);
+  font-size: 0.95rem !important;
+  line-height: 1.45;
+  color: rgba(0,0,0,.72);
+}
+
+.publication-page .page__content p[style*="font-size: smaller"] a {
+  color: #0b2b1f;
+  text-decoration: underline;
+  text-decoration-color: rgba(11,43,31,.35);
+}
+
+.publication-page .page__content p[style*="font-size: smaller"] a:hover {
+  text-decoration-color: rgba(11,43,31,.85);
+}
+
+html[data-theme="dark"] .publications-list li {
+  border-color: rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+}
+
+html[data-theme="dark"] .publications-list li > a,
+html[data-theme="dark"] .publications-list li > a:visited,
+html[data-theme="dark"] .publications-list li a {
+  color: rgba(255,255,255,.92);
+}
+
+html[data-theme="dark"] .publication-page .page__content p[style*="font-size: smaller"] {
+  border-left-color: rgba(255,255,255,.18);
+  color: rgba(255,255,255,.72);
+}
+
+html[data-theme="dark"] .publication-page .page__content p[style*="font-size: smaller"] a {
+  color: rgba(255,255,255,.92);
+  text-decoration-color: rgba(255,255,255,.35);
+}
