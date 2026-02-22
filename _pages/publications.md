@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: "Pubblicazioni"
 permalink: /publications/
 layout: single
 author_profile: true
@@ -12,7 +12,7 @@ author_profile: true
 {% assign pub_other = pub_all | where_exp: "p", "p.pub_type != 'book'" %}
 
 <div id="books"></div>
-## Books
+## Libri
 <div class="mag-wrap">
   <section class="mag-section" style="margin-top:0;">
     <div class="mag-grid">
@@ -72,7 +72,7 @@ author_profile: true
   </section>
 </div>
 
-## Articles, chapters, proceedings
+## Articoli, capitoli e atti di convegno
 {% for p in pub_other %}
 - [{{ p.title }}]({{ p.url | relative_url }})
   {% if p.venue %} — {{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}

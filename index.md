@@ -99,7 +99,7 @@ author_profile: true
           {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
           {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
           <div class="mag-card">
-            <p class="mag-kicker">Teaching</p>
+            <p class="mag-kicker">Insegnamenti</p>
             <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
             {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
             {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
@@ -110,13 +110,13 @@ author_profile: true
 
     {% if tutoring_items.size > 0 %}
     <div>
-      <h3>Tutoring</h3>
+      <h3>Tutorato</h3>
       <div class="mag-grid mag-grid--single">
         {% for item in tutoring_items limit:10 %}
           {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
           {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
           <div class="mag-card">
-            <p class="mag-kicker">Tutoring</p>
+            <p class="mag-kicker">Tutorato</p>
             <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
             {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
             {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
@@ -136,7 +136,7 @@ author_profile: true
           {% capture meta %}{% if item.period %}{{ item.period }}{% endif %}{% endcapture %}
           {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
           <div class="mag-card">
-            <p class="mag-kicker">Research</p>
+            <p class="mag-kicker">Ricerca</p>
             <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
             {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
             {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
@@ -165,10 +165,10 @@ author_profile: true
 
   <p style="margin-top:.8rem; display:flex; gap:.6rem; flex-wrap:wrap;">
     <a class="mag-btn secondary" href="{{ '/activity/' | relative_url }}">Vedi la lista completa delle attività</a>
-    <a class="mag-btn secondary" href="{{ '/activity/#teaching' | relative_url }}">Teaching</a>
-    <a class="mag-btn secondary" href="{{ '/activity/#tutoring' | relative_url }}">Tutoring</a>
+    <a class="mag-btn secondary" href="{{ '/activity/#teaching' | relative_url }}">Insegnamenti</a>
+    <a class="mag-btn secondary" href="{{ '/activity/#tutoring' | relative_url }}">Tutorato</a>
     <a class="mag-btn secondary" href="{{ '/activity/#training' | relative_url }}">Formazione</a>
-    <a class="mag-btn secondary" href="{{ '/activity/#research' | relative_url }}">Research</a>
+    <a class="mag-btn secondary" href="{{ '/activity/#research' | relative_url }}">Ricerca</a>
   </p>
 </section>
 
@@ -257,7 +257,7 @@ author_profile: true
   </ul>
 
   <p style="margin-top:.8rem;">
-    <a class="mag-btn secondary" href="{{ '/talks/' | relative_url }}">Vedi la lista completa dei talks</a>
+    <a class="mag-btn secondary" href="{{ '/talks/' | relative_url }}">Vedi la lista completa di convegni e conferenze</a>
   </p>
 </section>
 

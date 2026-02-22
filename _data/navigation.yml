@@ -7,13 +7,13 @@ main:
     url: /digital-editions/
   - title: "Attività"
     url: /activity/
-  - title: "Talks"
+  - title: "Convegni e conferenze"
     url: /talks/
   - title: "Associazioni"
     url: /associations/
   - title: "CV"
     url: /cv/
-  - title: "Links"
+  - title: "Link"
     url: /links/
   - title: "Dataset"
     url: /datasets/

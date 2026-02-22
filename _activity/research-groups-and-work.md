@@ -1,5 +1,5 @@
 ---
-title: "Research groups & activities (selezione)"
+title: "Gruppi di ricerca e attività (selezione)"
 collection: activity
 layout: single
 date: 2020-01-01

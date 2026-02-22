@@ -1,12 +1,12 @@
 ---
-title: "Talks"
+title: "Convegni e conferenze"
 permalink: /talks/
 layout: archive
 author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<p style="text-decoration:underline;"><a href="/talkmap.html">Vedi la mappa di tutti i luoghi in cui ho tenuto un intervento.</a></p>
 {% endif %}
 
 {% assign talks_all = site.talks | sort: "date" | reverse %}

@@ -1,5 +1,5 @@
 ---
-title: "Training & Research Periods (selezione)"
+title: "Formazione e periodi di ricerca (selezione)"
 collection: activity
 layout: single
 date: 2019-01-01

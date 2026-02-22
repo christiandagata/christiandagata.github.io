@@ -1,5 +1,5 @@
 ---
-title: "Teaching"
+title: "Insegnamenti"
 collection: activity
 layout: single
 date: 2024-01-01
