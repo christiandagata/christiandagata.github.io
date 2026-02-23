@@ -20,33 +20,39 @@ Vai direttamente a:
 
 <a id="teaching"></a>
 ## Insegnamenti
-<ul>
-{% for a in teaching %}
-  <li><a href="{{ a.url | relative_url }}">{{ a.title }}</a>{% if a.period %} — {{ a.period }}{% endif %}</li>
-{% endfor %}
 {% if teaching == empty %}
-  <li>Nessun insegnamento disponibile al momento.</li>
+- Nessun insegnamento disponibile al momento.
+{% else %}
+{% for a in teaching %}
+### {{ a.title }}{% if a.period %} — {{ a.period }}{% endif %}
+{{ a.content }}
+
+[Apri la scheda completa]({{ a.url | relative_url }})
+{% endfor %}
 {% endif %}
-</ul>
 
 <a id="training"></a>
 ## Formazione
-<ul>
-{% for a in training %}
-  <li><a href="{{ a.url | relative_url }}">{{ a.title }}</a>{% if a.period %} — {{ a.period }}{% endif %}</li>
-{% endfor %}
 {% if training == empty %}
-  <li>Nessuna attività di formazione disponibile al momento.</li>
+- Nessuna attività di formazione disponibile al momento.
+{% else %}
+{% for a in training %}
+### {{ a.title }}{% if a.period %} — {{ a.period }}{% endif %}
+{{ a.content }}
+
+[Apri la scheda completa]({{ a.url | relative_url }})
+{% endfor %}
 {% endif %}
-</ul>
 
 <a id="research"></a>
 ## Gruppi di ricerca e attività
-<ul>
-{% for a in research %}
-  <li><a href="{{ a.url | relative_url }}">{{ a.title }}</a>{% if a.period %} — {{ a.period }}{% endif %}</li>
-{% endfor %}
 {% if research == empty %}
-  <li>Nessun gruppo o attività di ricerca disponibile al momento.</li>
+- Nessun gruppo o attività di ricerca disponibile al momento.
+{% else %}
+{% for a in research %}
+### {{ a.title }}{% if a.period %} — {{ a.period }}{% endif %}
+{{ a.content }}
+
+[Apri la scheda completa]({{ a.url | relative_url }})
+{% endfor %}
 {% endif %}
-</ul>
