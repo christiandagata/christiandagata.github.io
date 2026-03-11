@@ -1,5 +1,5 @@
 ---
-title: «Cibernetica e fantasmi» ai tempi delle DH
+title: "«Cibernetica e fantasmi» ai tempi delle Digital Humanities. I sentieri dell'automa letterario da Calvino a Eco"
 collection: talks
 layout: single
 date: 2021-03-30

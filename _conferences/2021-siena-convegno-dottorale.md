@@ -1,5 +1,5 @@
 ---
-title: "Convegno dottorale (Università di Siena) — Quando il mondo brucia: le apocalissi senza fine"
+title: "Convegno dottorale (Università di Siena) — Quando il mondo brucia: le apocalissi senza fine di Morselli, Volponi, Eco"
 collection: conferences
 layout: single
 date: 2021-03-11

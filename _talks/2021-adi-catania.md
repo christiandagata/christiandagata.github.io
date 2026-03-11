@@ -1,5 +1,5 @@
 ---
-title: Il potere dei corpi e dei relitti nelle narrazioni della Fine
+title: "Il potere dei corpi e dei relitti nelle narrazioni della Fine. Le apocalissi di Morselli, Volponi, Eco, Calvino"
 collection: talks
 layout: single
 date: 2021-09-23

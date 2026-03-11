@@ -1,5 +1,5 @@
 ---
-title: Il canto di Orfi. Una lettura concordanziale di Poema a fumetti
+title: "Il canto di Orfi. Una lettura concordanziale di Poema a fumetti tra romanzo e graphic Novel"
 collection: talks
 layout: single
 date: 2022-03-30

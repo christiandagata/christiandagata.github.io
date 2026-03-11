@@ -12,7 +12,7 @@ cover: /images/books/copertina-viva-oracqua.png
 synopsis_short: "Studio e materiali preparatori sui Viceré..."
 synopsis: "..."
 buy_links:
-  - label: "Editore"
-    url: "https://..."
+  - label: "Editore (La scuola di Pitagora) — Open Access"
+    url: "https://www.scuoladipitagora.it/collane-edizioni-sinestesie/dyo-logoi/viva-l-italia-viva-oracqua-il-cuore-dei-vicer%C3%A9-di-federico-de-roberto-open-access"
 ---
 Testo libero della scheda (facoltativo).

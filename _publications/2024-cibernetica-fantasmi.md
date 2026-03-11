@@ -6,6 +6,8 @@ date: 2024-01-01
 pub_type: chapter
 venue: "Sistema binario (eum)"
 citation: "C. D’Agata, Cibernetica e fantasmi..., in Sistema binario..., eum, 2024, pp. 77-94."
+featured: true
+featured_rank: 10
 ---
 
 Scheda.

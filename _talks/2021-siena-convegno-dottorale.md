@@ -1,5 +1,5 @@
 ---
-title: 'Quando il mondo brucia: le apocalissi senza fine'
+title: "Quando il mondo brucia: le apocalissi senza fine di Morselli, Volponi, Eco"
 collection: talks
 layout: single
 date: 2021-03-11

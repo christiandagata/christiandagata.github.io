@@ -11,3 +11,4 @@ featured_rank: 4
 
 1. Dottore di ricerca in Scienze dell’Interpretazione, XXXV ciclo (21/06/2023), UniCT — tesi: «I nomi della rosa».
 2. Laurea magistrale in Filologia moderna (11/07/2018), UniCT — tesi: *Tra Gadamer ed Eco: l’ascolto ostinato del testo. Per un’ermeneutica de Il pendolo di Foucault* (110/110 e lode).
+3. Premio Gigliozzi AIUCD — migliori paper di giovani studiosi al Convegno AIUCD 2022 ([info](http://www.aiucd.it/vincitori-premio-gigliozzi-e-small-grants-2022/)).

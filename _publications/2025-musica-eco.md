@@ -6,6 +6,8 @@ date: 2025-01-01
 pub_type: article
 venue: "Diacritica, 56"
 citation: "C. D’Agata, «La sua lunghissima nota finale non si era mai interrotta»..., in «Diacritica», 56, 2025."
+featured: true
+featured_rank: 5
 ---
 
 Scheda.

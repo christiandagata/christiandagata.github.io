@@ -1,5 +1,5 @@
 ---
-title: "CCeH Seminar — The Variants of the Rose: A digital edition and a vocabulary of The Name of the Rose"
+title: "CCeH Seminar — The Variants of the Rose: A digital edition and a vocabulary of The Name of the Rose of Umberto Eco"
 collection: conferences
 layout: single
 date: 2022-04-07

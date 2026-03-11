@@ -17,3 +17,4 @@ featured_rank: 8
 6. Euporia Workshop for PhD Students (DSL) — 15/04/2021–20/05/2021.
 7. Euporia 2021 (webinars su DSL) — 30/11/2020–15/03/2021.
 8. Certificazione CEDILS (distinzione) — 05/02/2021.
+9. Borsa di Studio «Master in Digital Humanities» — 2018/2019.

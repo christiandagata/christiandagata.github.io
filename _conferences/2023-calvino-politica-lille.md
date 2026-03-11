@@ -1,5 +1,5 @@
 ---
-title: "Calvino e la politica dopo il 1957 — La malinconia del realismo. Lettura concordanziale della trilogia “realista”"
+title: "Calvino e la politica dopo il 1957 — La malinconia del realismo. Per una lettura concordanziale della trilogia «realista»"
 collection: conferences
 layout: single
 date: 2023-11-07

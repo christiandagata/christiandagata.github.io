@@ -1,5 +1,5 @@
 ---
-title: "Nel nome della rosa. Apocalisse, genesi, varianti"
+title: "Nel nome della rosa. Apocalissi, genesi, varianti"
 collection: books
 layout: book
 date: 2025-01-01

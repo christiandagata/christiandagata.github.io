@@ -1,5 +1,5 @@
 ---
-title: "XXIV Congresso Nazionale ADI — Il potere dei corpi e dei relitti nelle narrazioni della Fine"
+title: "XXIV Congresso Nazionale ADI — Il potere dei corpi e dei relitti nelle narrazioni della Fine. Le apocalissi di Morselli, Volponi, Eco, Calvino"
 collection: conferences
 layout: single
 date: 2021-09-23

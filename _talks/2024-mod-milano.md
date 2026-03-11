@@ -1,5 +1,5 @@
 ---
-title: Moderno e antimoderno. Le avventure di una contrapposizione
+title: "«È arrivata la fine del mondo!». Appunti per un commento digitale de I viceré tra modernità, (anti-)storia e Apocalisse"
 collection: talks
 layout: single
 date: 2024-06-13

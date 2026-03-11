@@ -6,6 +6,8 @@ date: 2025-01-01
 pub_type: article
 venue: "Il Veltro"
 citation: "C. D’Agata, Per una lettura apocalittica di Viceré e Imperio di Federico De Roberto: Risorgimento, crisi, catastrofe, «Il Veltro», 2025."
+featured: true
+featured_rank: 6
 ---
 
 Scheda.

@@ -6,8 +6,7 @@ date: 2025-01-01
 pub_type: chapter
 venue: "In Epidemie del potere (Euno)"
 citation: "C. D’Agata, Alcune questioni di Italianistica Digitale..., in Epidemie del potere..., a cura di A. Amaduri, M. Giuffrida, Euno, Leonforte 2025."
-featured: true
-featured_rank: 7
+featured: false
 ---
 
 Scheda.

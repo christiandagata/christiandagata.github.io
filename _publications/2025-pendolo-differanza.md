@@ -7,7 +7,7 @@ pub_type: chapter
 venue: "Italianistica digitale. La ricerca dei giovani studiosi (Ledizioni)"
 citation: "C. D’Agata, Il pendolo e la «differanza»..., in «Italianistica digitale. La ricerca dei giovani studiosi», Ledizioni, Milano 2025."
 featured: true
-featured_rank: 3
+featured_rank: 7
 ---
 
 Scheda.

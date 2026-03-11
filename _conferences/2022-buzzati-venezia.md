@@ -1,5 +1,5 @@
 ---
-title: "Convegno Internazionale nel cinquantenario della scomparsa di Dino Buzzati — Il canto di Orfi. Una lettura concordanziale di Poema a fumetti"
+title: "Convegno Internazionale nel cinquantenario della scomparsa di Dino Buzzati — Il canto di Orfi. Una lettura concordanziale di Poema a fumetti tra romanzo e graphic Novel"
 collection: conferences
 layout: single
 date: 2022-03-30

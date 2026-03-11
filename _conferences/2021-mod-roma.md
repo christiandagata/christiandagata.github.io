@@ -1,5 +1,5 @@
 ---
-title: "XXIII Convegno internazionale MOD — Dedalus, Charlie Brown e cosmonauti. Le contronarrazioni di Umberto Eco"
+title: "XXII Convegno internazionale MOD — Dedalus, Charlie Brown e cosmonauti. Le contronarrazioni di Umberto Eco tra avanguardia e intreccio"
 collection: conferences
 layout: single
 date: 2021-06-17

@@ -1,5 +1,5 @@
 ---
-title: Per una filologia degli anni Zero
+title: "Per una filologia degli anni Zero: appunti e riflessioni sull'edizione scientifica digitale de Il nome della rosa"
 collection: talks
 layout: single
 date: 2021-06-11

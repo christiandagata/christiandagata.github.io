@@ -1,5 +1,5 @@
 ---
-title: Violini, operai, balene. Per una tassonomia delle varianti
+title: "Violini, operai, balene. Per una tassonomia delle varianti de Il nome della rosa"
 collection: talks
 layout: single
 date: 2021-09-15
