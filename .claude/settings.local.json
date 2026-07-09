@@ -5,7 +5,17 @@
       "Bash(do echo:*)",
       "Read(//c/Users/chris/OneDrive/Documenti/GitHub/christiandagata.github.io/**)",
       "Bash(done)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(gh run *)",
+      "Bash(curl -s \"https://api.github.com/repos/christiandagata/christiandagata.github.io/actions/runs?per_page=5\")",
+      "Bash(curl -s \"https://api.github.com/repos/christiandagata/christiandagata.github.io/actions/runs/29004347111\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('status:', d['status']\\); print\\('conclusion:', d['conclusion']\\); print\\('created_at:', d['created_at']\\); print\\('updated_at:', d['updated_at']\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/christiandagata/christiandagata.github.io/actions/runs?per_page=10\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s \"https://api.github.com/repos/christiandagata/christiandagata.github.io/pages\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s \"https://www.githubstatus.com/api/v2/status.json\")",
+      "Bash(curl -s \"https://www.githubstatus.com/api/v2/components.json\")"
     ]
   }
 }
