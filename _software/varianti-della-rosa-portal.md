@@ -3,6 +3,9 @@ title: "Varianti della rosa — portale web (2022–2026)"
 collection: software
 layout: single
 date: 2022-01-01
+link: "https://www.variantidellarosa.it"
+role: "Progettazione, sviluppo e curatela"
+screenshot: "/images/sites/varianti-della-rosa.jpg"
 github: "https://github.com/christiandagata"
 featured: true
 featured_rank: 3

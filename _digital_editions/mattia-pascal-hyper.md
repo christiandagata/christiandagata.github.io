@@ -4,6 +4,7 @@ collection: digital_editions
 layout: single
 date: 2022-01-01
 url_external: "https://www.pirandellonazionale.it/hyperedizione-il-fu-mattia-pascal/"
+link: "https://www.pirandellonazionale.it/hyperedizione-il-fu-mattia-pascal/"
 featured: true
 featured_rank: 7
 ---

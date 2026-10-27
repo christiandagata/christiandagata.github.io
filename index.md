@@ -182,6 +182,7 @@ author_profile: true
     <div class="mag-grid">
       {% for item in items limit:6 %}
         <div class="mag-card">
+          {% if item.screenshot and item.screenshot != "" %}{% include site-shot.html item=item %}{% endif %}
           <p class="mag-kicker">Edizione digitale</p>
           <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
 
@@ -262,23 +263,21 @@ author_profile: true
 </section>
 
 <section class="mag-section">
-  <h2>Sito web</h2>
+  <h2>Software e siti web</h2>
   <div class="mag-grid">
     {% assign items = site.software | where: "featured", true | sort: "featured_rank" %}
-    {% for item in items limit:10 %}
-      {% capture meta %}
-        {% if item.github %}<a href="{{ item.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-      {% endcapture %}
-      {% assign excerpt = item.excerpt | strip_html | truncate: 160 %}
-
+    {% for item in items limit:6 %}
       <div class="mag-card">
-        <p class="mag-kicker">Software</p>
+        {% if item.link %}{% include site-shot.html item=item %}{% endif %}
+        <p class="mag-kicker">Sito web</p>
         <h3 class="mag-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
-        {% if meta and meta != "" %}<div class="mag-meta">{{ meta }}</div>{% endif %}
-        {% if excerpt and excerpt != "" %}<div class="mag-excerpt">{{ excerpt }}</div>{% endif %}
+        {% if item.role %}<div class="mag-meta">{{ item.role }}</div>{% endif %}
       </div>
     {% endfor %}
   </div>
+  <p style="margin-top:.8rem;">
+    <a class="mag-btn secondary" href="{{ '/software/' | relative_url }}">Vedi tutti i software e siti web</a>
+  </p>
 </section>
 
 <section class="mag-section">

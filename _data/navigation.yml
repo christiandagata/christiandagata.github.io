@@ -5,6 +5,8 @@ main:
     url: /publications/
   - title: "Edizioni digitali"
     url: /digital-editions/
+  - title: "Software e siti web"
+    url: /software/
   - title: "Attività"
     url: /activity/
   - title: "Convegni e conferenze"

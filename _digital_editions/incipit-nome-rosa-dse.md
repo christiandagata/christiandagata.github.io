@@ -4,6 +4,7 @@ collection: digital_editions
 layout: single
 date: 2022-01-01
 url_external: "https://linea.unict.it/umberto-eco/il-nome-della-rosa/eco-dse/index.html/"
+link: "https://linea.unict.it/umberto-eco/il-nome-della-rosa/eco-dse/index.html/"
 featured: false
 ---
 

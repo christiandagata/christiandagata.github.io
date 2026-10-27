@@ -26,9 +26,9 @@ author:
   avatar           : "profile.jpg"
   name             : "Christian D'Agata"
   pronouns         : # example: "she/her"  
-  bio              : "Assegnista di ricerca presso l’Università degli Studi di Catania nel contesto del progetto PNRR <em>Verismo Digitale</em>
-    (Filologia e lessicografia digitale dei testi della letteratura italiana dell’Otto/Novecento).<br>
-    <strong>Interessi:</strong> Critica computazionale della letteratura, edizioni scientifiche digitali e hyperedizioni, Domain Specific Language, Large Language Model, Nature Language Processing, codifica XML-TEI."
+  bio              : "Assegnista di ricerca presso l’Università degli Studi di Catania per il progetto <em>Verismo Digitale</em>
+    (Filologia e lessicografia digitale dei testi della letteratura italiana dell’Otto/Novecento; PNRR CHANGES, ora HERITAS).<br>
+    <strong>Interessi:</strong> Ermeneutica digitale, critica computazionale della letteratura, edizioni scientifiche digitali e hyperedizioni, Domain Specific Language, Large Language Model e Intelligenza Artificiale, Natural Language Processing, codifica XML-TEI."
   location         : "Catania"
   employer         : "Università di Catania"
   uri              : "www.variantidellarosa.it"

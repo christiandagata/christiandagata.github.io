@@ -8,5 +8,3 @@ venue: "Umanistica Digitale, 20 (2025)"
 citation: "E. Carbé, C. D’Agata, A. Di Silvestro, M. Giglio, D. Spampinato (a cura di), Digital Roots and Digital Routes, numero speciale di «Umanistica Digitale», 20, 2025."
 featured: false
 ---
-
-Scheda.

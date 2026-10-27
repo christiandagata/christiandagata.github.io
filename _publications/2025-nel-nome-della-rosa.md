@@ -1,11 +1,12 @@
 ---
-title: "Nel nome della rosa. Apocalissi, genesi, varianti"
+title: "Nel nome della rosa. Apocalisse, genesi, varianti"
 collection: publications
 permalink: /publication/2025-nel-nome-della-rosa
 date: 2025-01-01
 pub_type: book
+cover: /images/books/copertinamonografianome.jpg
 venue: "Monografia"
-citation: "D’Agata, C. Nel Nome della rosa. Apocalissi, genesi, varianti; Eliphi: Strasbourg, 2025."
+citation: "C. D’Agata, Nel nome della rosa. Apocalisse, genesi, varianti, Strasbourg, Éliphi – Éditions de linguistique et de philologie, 2025."
 excerpt: "Studio sull’origine apocalittica del Nome della rosa e sulla lunga genesi testuale che conduce fino alla revisione del 2012."
 featured: true
 featured_rank: 1

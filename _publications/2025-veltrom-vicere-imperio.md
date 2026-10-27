@@ -9,5 +9,3 @@ citation: "C. D’Agata, Per una lettura apocalittica di Viceré e Imperio di Fe
 featured: true
 featured_rank: 6
 ---
-
-Scheda.

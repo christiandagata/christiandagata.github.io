@@ -1,0 +1,3 @@
+{% comment %}Screenshot della home: usa l'immagine locale in `screenshot` se presente, altrimenti un'anteprima generata dal servizio mshots.{% endcomment %}
+{% if include.item.screenshot and include.item.screenshot != "" %}{% assign shot = include.item.screenshot | relative_url %}{% else %}{% capture shot %}https://s.wordpress.com/mshots/v1/{{ include.item.link | url_encode }}?w=1200&h=750{% endcapture %}{% endif %}
+<a href="{{ include.item.link }}" target="_blank" rel="noopener"><img class="site-shot" src="{{ shot | strip }}" alt="Home page di {{ include.item.title | escape }}" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:12px;border:1px solid var(--mag-border, #e5e7eb);margin-bottom:.7rem;"></a>

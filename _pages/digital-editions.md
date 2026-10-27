@@ -21,6 +21,7 @@ author_profile: true
       <div class="mag-grid">
         {% for e in items %}
           <div class="mag-card">
+            {% if e.screenshot and e.screenshot != "" %}{% include site-shot.html item=e %}{% endif %}
             <p class="mag-kicker">Edizione digitale</p>
 
             <h3 class="mag-title">

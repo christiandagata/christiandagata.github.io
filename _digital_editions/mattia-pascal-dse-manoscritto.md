@@ -4,6 +4,7 @@ collection: digital_editions
 layout: single
 date: 2022-01-01
 url_external: "https://www.pirandellonazionale.it/download/evtms/"
+link: "https://www.pirandellonazionale.it/download/evtms/"
 featured: false
 ---
 

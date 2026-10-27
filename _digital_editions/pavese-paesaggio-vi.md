@@ -4,6 +4,7 @@ collection: digital_editions
 layout: single
 date: 2022-01-01
 url_external: "http://linea.unict.it/cesare-pavese/lavorare-stanca/pavese-paesaggio-ms/index.html"
+link: "http://linea.unict.it/cesare-pavese/lavorare-stanca/pavese-paesaggio-ms/index.html"
 featured: false
 ---
 

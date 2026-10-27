@@ -45,6 +45,10 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.cover %}<img src="{{ page.cover | relative_url }}" alt="Copertina di {{ page.title | strip_html | escape }}" style="float:right;max-width:200px;margin:0 0 1rem 1.2rem;border-radius:10px;border:1px solid #e5e7eb;">{% endif %}
+        {% if page.screenshot and page.screenshot != "" %}{% include site-shot.html item=page %}{% endif %}
+        {% if page.abstract %}<h2>Abstract</h2>
+        <p>{{ page.abstract }}</p>{% endif %}
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
