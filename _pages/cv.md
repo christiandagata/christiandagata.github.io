@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 ## Profilo
-Assegnista di ricerca presso l’Università degli Studi di Catania dal 20 marzo 2024 al 19 marzo 2026 nel contesto del progetto PNRR **Verismo Digitale** (*Filologia e lessicografia digitale dei testi della letteratura italiana dell’Otto/Novecento*).
+Assegnista di ricerca presso l’Università degli Studi di Catania dal 20 marzo 2024 a oggi nel contesto del progetto PNRR **Verismo Digitale** (*Filologia e lessicografia digitale dei testi della letteratura italiana dell’Otto/Novecento*).
 
 ---
 
@@ -24,7 +24,7 @@ Assegnista di ricerca presso l’Università degli Studi di Catania dal 20 marzo
 ---
 
 ## Esperienza di ricerca
-- **Assegnista di ricerca**, Università degli Studi di Catania — **20/03/2024 – 19/03/2026**  
+- **Assegnista di ricerca**, Università degli Studi di Catania — **20/03/2024 – oggi**  
   Progetto PNRR **Verismo Digitale** (Filologia e lessicografia digitale; edizioni scientifiche digitali).
 
 - **Borsa di ricerca** “Supporto all’Edizione Digitale dell’Edizione Nazionale dell’Opera Omnia di Luigi Pirandello” (Resp. prof. Antonio Di Silvestro) — **08/05/2023 – 31/08/2023**
