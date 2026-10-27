@@ -7,7 +7,7 @@ link: "https://poichilia.unict.it/"
 role: "Progettazione dello schema di codifica XML-TEI e dell’interfaccia; gestione dei contenuti"
 screenshot: "/images/sites/poichilia.jpg"
 featured: true
-featured_rank: 4
+featured_rank: 5
 ---
 
 Portale del progetto intra-dipartimentale PIA.CE.RI dell’Università di Catania «Poichilia. PoterI e ContagI nella Letteratura Italiana: un’Antologia» (PI prof. Antonio Sichera).

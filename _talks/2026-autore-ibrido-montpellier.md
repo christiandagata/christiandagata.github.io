@@ -4,7 +4,7 @@ collection: talks
 layout: single
 date: 2026-04-24
 location: "Université Paul-Valéry Montpellier 3 (Laboratoire ReSo), 24 aprile 2026"
-featured: false
+featured: true
 type: Conference talk
 slidesurl: ''
 paperurl: ''

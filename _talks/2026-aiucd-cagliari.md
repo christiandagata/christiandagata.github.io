@@ -4,7 +4,7 @@ collection: talks
 layout: single
 date: 2026-06-03
 location: "Cagliari, 3–5 giugno 2026"
-featured: false
+featured: true
 type: Conference talk
 slidesurl: ''
 paperurl: ''

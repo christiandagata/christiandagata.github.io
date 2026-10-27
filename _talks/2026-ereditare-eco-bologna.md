@@ -4,7 +4,7 @@ collection: talks
 layout: single
 date: 2026-05-27
 location: "Bologna, 27–29 maggio 2026"
-featured: false
+featured: true
 type: Conference talk
 slidesurl: ''
 paperurl: ''

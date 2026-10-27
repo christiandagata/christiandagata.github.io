@@ -4,7 +4,7 @@ collection: talks
 layout: single
 date: 2026-07-27
 location: "Daejeon (Corea del Sud), 27–31 luglio 2026"
-featured: false
+featured: true
 type: Conference talk
 slidesurl: ''
 paperurl: ''

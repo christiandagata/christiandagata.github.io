@@ -4,7 +4,7 @@ collection: talks
 layout: single
 date: 2026-06-12
 location: "Pavia, 11–13 giugno 2026"
-featured: false
+featured: true
 type: Conference talk
 slidesurl: ''
 paperurl: ''

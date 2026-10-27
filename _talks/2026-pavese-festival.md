@@ -4,7 +4,7 @@ collection: talks
 layout: single
 date: 2026-06-23
 location: "Santo Stefano Belbo, 23 giugno 2026"
-featured: false
+featured: true
 type: Talk
 slidesurl: ''
 paperurl: ''

@@ -55,7 +55,7 @@ author_profile: true
 
   <ul class="mag-list">
     {% assign items = site.publications | where: "featured", true | sort: "featured_rank" %}
-    {% for item in items limit:10 %}
+    {% for item in items limit:12 %}
       <li>
         <div class="mag-date">
           {% if item.date %}{{ item.date | date: "%Y" }}{% endif %}
@@ -232,8 +232,8 @@ author_profile: true
   <h2>Convegni, conferenze e giornate studio</h2>
 
   <ul class="mag-list">
-    {% assign items = site.talks | where: "featured", true | sort: "featured_rank" %}
-    {% for item in items limit:10 %}
+    {% assign items = site.talks | where: "featured", true | sort: "date" | reverse %}
+    {% for item in items limit:12 %}
       <li>
         <div class="mag-date">
           {% if item.date %}{{ item.date | date: "%d/%m/%Y" }}{% endif %}
@@ -266,7 +266,7 @@ author_profile: true
   <h2>Software e siti web</h2>
   <div class="mag-grid">
     {% assign items = site.software | where: "featured", true | sort: "featured_rank" %}
-    {% for item in items limit:6 %}
+    {% for item in items limit:8 %}
       <div class="mag-card">
         {% if item.link %}{% include site-shot.html item=item %}{% endif %}
         <p class="mag-kicker">Sito web</p>

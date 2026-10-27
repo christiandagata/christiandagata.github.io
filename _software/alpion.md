@@ -7,7 +7,7 @@ link: "https://alpion.unict.it/"
 role: "Progettazione e sviluppo informatico e web (con Pietro Sichera)"
 screenshot: "/images/sites/alpion.jpg"
 featured: true
-featured_rank: 6
+featured_rank: 7
 ---
 
 Portale del progetto Prometeo dell’Università di Catania «ALPION. Archivio lessicografico della poesia italiana dell’Otto/Novecento» (PI prof. Antonio Di Silvestro), a.a. 2020/2021.

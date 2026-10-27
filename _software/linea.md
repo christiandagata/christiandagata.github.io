@@ -7,7 +7,7 @@ link: "https://linea.unict.it/"
 role: "Progettazione del modello di codifica"
 screenshot: "/images/sites/linea.jpg"
 featured: true
-featured_rank: 5
+featured_rank: 6
 ---
 
 Portale del progetto Prometeo dell’Università di Catania «LINEA. Letteratura italiana del Novecento per un’Edizione-Archivio» (PI prof. Antonio Sichera), a.a. 2020/2021.

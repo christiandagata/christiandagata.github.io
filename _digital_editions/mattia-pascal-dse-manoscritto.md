@@ -5,7 +5,9 @@ layout: single
 date: 2022-01-01
 url_external: "https://www.pirandellonazionale.it/download/evtms/"
 link: "https://www.pirandellonazionale.it/download/evtms/"
-featured: false
+featured: true
+screenshot: "/images/sites/mattia-pascal-manoscritto.jpg"
+featured_rank: 3
 ---
 
 Edizione scientifica digitale del manoscritto de *Il fu Mattia Pascal* di Luigi Pirandello (con A. Zammataro), nell'ambito dell'Edizione Digitale dell'Opera Omnia di Luigi Pirandello (Pirandello Nazionale).
