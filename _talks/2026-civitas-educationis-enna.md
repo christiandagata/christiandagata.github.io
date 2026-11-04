@@ -1,12 +1,12 @@
 ---
-title: "Letteratura e DH ai tempi dell’IA"
+title: "Letteratura e Digital Humanities nell’era dell’IA"
 collection: talks
 layout: talk
 date: 2026-11-05
 location: "Università Kore di Enna, 5 novembre 2026"
 featured: true
 type: Talk
-slidesurl: "/files/slides/2026-civitas-educationis-letteratura-dh-ai-tempi-dell-ia.pdf"
+slidesurl: "/files/slides/2026-civitas-educationis-letteratura-digital-humanities-era-ia.pdf"
 paperurl: ''
 videourl: ''
 excerpt: ''
@@ -17,9 +17,9 @@ venue: "Festival «Civitas educationis. Visioni, sensi, orizzonti» (VIII edizio
 **Location:** Enna, Università Kore, Edificio D, Aula 408 (incontri/dialoghi/confronti, ore 16.15–17.30)
 **Date:** 2026-11-05
 
-Intervento: «Letteratura e DH ai tempi dell’IA» (nel programma: «Letteratura e Digital Humanities nell’era dell’IA»); discussant Paolo Monella (Università Kore di Enna).
+Intervento: «Letteratura e Digital Humanities nell’era dell’IA»; discussant Paolo Monella (Università Kore di Enna).
 
-<p><a class="btn btn--primary" href="{{ '/files/slides/2026-civitas-educationis-letteratura-dh-ai-tempi-dell-ia.pdf' | relative_url }}" target="_blank" rel="noopener">Slide (PDF)</a></p>
+<p><a class="btn btn--primary" href="{{ '/files/slides/2026-civitas-educationis-letteratura-digital-humanities-era-ia.pdf' | relative_url }}" target="_blank" rel="noopener">Slide (PDF)</a></p>
 
 ## Tre esperimenti: Propp, Rodari, inbook
 
