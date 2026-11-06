@@ -31,20 +31,20 @@ author:
     <strong>Interessi:</strong> Ermeneutica digitale, critica computazionale della letteratura, edizioni scientifiche digitali e hyperedizioni, Domain Specific Language, Large Language Model e Intelligenza Artificiale, Natural Language Processing, codifica XML-TEI."
   location         : "Catania"
   employer         : "Università di Catania"
-  uri              : "www.variantidellarosa.it"
+  uri              : "https://christiandagata.github.io"
   email            : "christian.dagata@unict.it" 
 
   # Academic websites
-  academia         : # URL
+  academia         : "https://unict.academia.edu/ChristianDAgata"
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=gAka9aQAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0002-9630-3895"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Christian-Dagata-4"
   scopus           : # URL
   zotero           : # URL
 
@@ -59,7 +59,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username

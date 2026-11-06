@@ -62,18 +62,22 @@ author_profile: true
       </li>
       {% endif %}
 
-      {% if site.author.bluesky %}
+      {% if site.author.academia %}
       <li>
-        <div class="mag-date">Bluesky</div>
+        <div class="mag-date">Academia</div>
         <div class="mag-main">
-          <div>
-            {% if site.author.bluesky contains "http" %}
-              <a href="{{ site.author.bluesky }}" target="_blank" rel="noopener">{{ site.author.bluesky }}</a>
-            {% else %}
-              <a href="https://{{ site.author.bluesky }}" target="_blank" rel="noopener">{{ site.author.bluesky }}</a>
-            {% endif %}
-          </div>
-          <div class="mag-sub">Aggiornamenti pubblici su attività e progetti.</div>
+          <div><a href="{{ site.author.academia }}" target="_blank" rel="noopener">Academia.edu</a></div>
+          <div class="mag-sub">Pubblicazioni e materiali in accesso aperto.</div>
+        </div>
+      </li>
+      {% endif %}
+
+      {% if site.author.researchgate %}
+      <li>
+        <div class="mag-date">ResearchGate</div>
+        <div class="mag-main">
+          <div><a href="{{ site.author.researchgate }}" target="_blank" rel="noopener">ResearchGate</a></div>
+          <div class="mag-sub">Profilo di ricerca, pubblicazioni e contatti.</div>
         </div>
       </li>
       {% endif %}
