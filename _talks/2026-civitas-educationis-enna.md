@@ -23,32 +23,34 @@ Intervento: «Letteratura e Digital Humanities nell’era dell’IA»; discussan
 
 ## Tre esperimenti: Propp, Rodari, inbook
 
+<p class="note" style="font-size:.85em;color:#5E5B70">Registrazioni dello schermo dei tre esperimenti, in riproduzione continua e senza audio.</p>
+
 {% assign g = '/images/talks/2026-civitas-educationis/' | relative_url %}
 
 <figure>
-  <img src="{{ g }}propp-mazzo.gif" alt="Esperimento 1: il mazzo di Propp, carte delle funzioni per inventare e annotare fiabe" loading="lazy" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;">
+  <video src="{{ g }}propp-mazzo.mp4" poster="{{ g }}propp-mazzo.jpg" autoplay loop muted playsinline preload="none" aria-label="Esperimento 1: il mazzo di Propp, carte delle funzioni per inventare e annotare fiabe" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;display:block"></video>
   <figcaption>Esperimento 1 · Il mazzo di Propp: inventare una fiaba con le funzioni, oppure annotare le fiabe della tradizione (con markup XML/TEI).</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ g }}sentiero-della-fiaba-1.gif" alt="Il sentiero della fiaba, gioco con le funzioni di Propp" loading="lazy" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;">
+  <video src="{{ g }}sentiero-della-fiaba-1.mp4" poster="{{ g }}sentiero-della-fiaba-1.jpg" autoplay loop muted playsinline preload="none" aria-label="Il sentiero della fiaba, gioco con le funzioni di Propp" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;display:block"></video>
   <figcaption>Il sentiero della fiaba: un gioco con le funzioni di Propp.</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ g }}sentiero-della-fiaba-2.gif" alt="Il sentiero della fiaba, percorso del gioco" loading="lazy" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;">
+  <video src="{{ g }}sentiero-della-fiaba-2.mp4" poster="{{ g }}sentiero-della-fiaba-2.jpg" autoplay loop muted playsinline preload="none" aria-label="Il sentiero della fiaba, percorso del gioco" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;display:block"></video>
 </figure>
 
 <figure>
-  <img src="{{ g }}sentiero-della-fiaba-3.gif" alt="Il sentiero della fiaba, raccolta delle carte" loading="lazy" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;">
+  <video src="{{ g }}sentiero-della-fiaba-3.mp4" poster="{{ g }}sentiero-della-fiaba-3.jpg" autoplay loop muted playsinline preload="none" aria-label="Il sentiero della fiaba, raccolta delle carte" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;display:block"></video>
 </figure>
 
 <figure>
-  <img src="{{ g }}rodari-grammatica-fantasia.gif" alt="Esperimento 2: Grammatica della fantasia di Rodari, il binomio fantastico" loading="lazy" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;">
+  <video src="{{ g }}rodari-grammatica-fantasia.mp4" poster="{{ g }}rodari-grammatica-fantasia.jpg" autoplay loop muted playsinline preload="none" aria-label="Esperimento 2: Grammatica della fantasia di Rodari, il binomio fantastico" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;display:block"></video>
   <figcaption>Esperimento 2 · Rodari, <em>Grammatica della fantasia</em>: il binomio fantastico e lo schedario delle tecniche.</figcaption>
 </figure>
 
 <figure>
-  <img src="{{ g }}inbook-cappuccetto-rosso.gif" alt="Esperimento 3: l'inbook di Cappuccetto Rosso, testo tradotto in simboli" loading="lazy" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;">
+  <video src="{{ g }}inbook-cappuccetto-rosso.mp4" poster="{{ g }}inbook-cappuccetto-rosso.jpg" autoplay loop muted playsinline preload="none" aria-label="Esperimento 3: l'inbook di Cappuccetto Rosso, testo tradotto in simboli" style="width:100%;border-radius:10px;border:1px solid #e5e7eb;display:block"></video>
   <figcaption>Esperimento 3 · L’inbook di Cappuccetto Rosso: codifica automatica e rivista in simboli per la CAA (pittogrammi ARASAAC, CC BY-NC-SA).</figcaption>
 </figure>
