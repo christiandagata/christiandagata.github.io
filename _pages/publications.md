@@ -51,6 +51,10 @@ author_profile: true
                     <a class="mag-btn secondary" href="{{ b.index_pdf | relative_url }}" target="_blank" rel="noopener">Indice (PDF)</a>
                   {% endif %}
 
+                  {% if b.academia %}
+                    <a class="mag-btn secondary" href="{{ b.academia }}" target="_blank" rel="noopener">Academia.edu</a>
+                  {% endif %}
+
                   {% if b.buy_links %}
                     {% for l in b.buy_links %}
                       <a class="mag-btn" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label | default: "Acquista" }}</a>
@@ -78,10 +82,11 @@ author_profile: true
 {% for p in pub_other %}
 - [{{ p.title }}]({{ p.url | relative_url }})
   {% if p.venue %} — {{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
-  {% if p.citation or p.doi %}
+  {% if p.citation or p.doi or p.academia %}
   <div class="pub-entry-meta">
     {% if p.citation %}{{ p.citation }}{% endif %}
     {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+    {% if p.academia %}<a href="{{ p.academia }}" target="_blank" rel="noopener">Academia.edu</a>{% endif %}
   </div>
   {% endif %}
 {% endfor %}
@@ -90,10 +95,11 @@ author_profile: true
 {% for p in pub_edited %}
 - [{{ p.title }}]({{ p.url | relative_url }})
   {% if p.venue %} — {{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
-  {% if p.citation or p.doi %}
+  {% if p.citation or p.doi or p.academia %}
   <div class="pub-entry-meta">
     {% if p.citation %}{{ p.citation }}{% endif %}
     {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+    {% if p.academia %}<a href="{{ p.academia }}" target="_blank" rel="noopener">Academia.edu</a>{% endif %}
   </div>
   {% endif %}
 {% endfor %}
@@ -102,10 +108,11 @@ author_profile: true
 {% for p in pub_abstract %}
 - [{{ p.title }}]({{ p.url | relative_url }})
   {% if p.venue %} — {{ p.venue }}{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}
-  {% if p.citation or p.doi %}
+  {% if p.citation or p.doi or p.academia %}
   <div class="pub-entry-meta">
     {% if p.citation %}{{ p.citation }}{% endif %}
     {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+    {% if p.academia %}<a href="{{ p.academia }}" target="_blank" rel="noopener">Academia.edu</a>{% endif %}
   </div>
   {% endif %}
 {% endfor %}

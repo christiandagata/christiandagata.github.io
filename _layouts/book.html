@@ -20,6 +20,10 @@ layout: default
         <p><a href="{{ page.index_pdf | relative_url }}" target="_blank" rel="noopener">📄 Indice (PDF)</a></p>
       {% endif %}
 
+      {% if page.academia %}
+        <p style="margin-top:1rem;"><a href="{{ page.academia }}" target="_blank" rel="noopener">Scheda su Academia.edu</a></p>
+      {% endif %}
+
       {% if page.buy_links %}
         <h3 style="margin-top:1rem;">Dove acquistare</h3>
         <ul>

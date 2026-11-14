@@ -8,4 +8,5 @@ venue: "Italianistica digitale. La ricerca dei giovani studiosi (Ledizioni)"
 citation: "C. D’Agata, Il pendolo e la «differanza». Per una critica digitale delle varianti de Il pendolo di Foucault di Umberto Eco, in Italianistica digitale. La ricerca dei giovani studiosi, Milano, Ledizioni, 2025."
 featured: true
 featured_rank: 9
+academia: "https://www.academia.edu/180695952"
 ---

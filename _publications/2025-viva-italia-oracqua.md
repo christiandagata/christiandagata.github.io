@@ -10,4 +10,5 @@ citation: "C. D’Agata, «Viva l’Italia!... Viva Oracqua!». Il cuore dei Vic
 paperurl: "https://www.scuoladipitagora.it/collane-edizioni-sinestesie/dyo-logoi/viva-l-italia-viva-oracqua-il-cuore-dei-vicer%C3%A9-di-federico-de-roberto-open-access"
 featured: true
 featured_rank: 2
+academia: "https://www.academia.edu/180938170"
 ---

@@ -6,4 +6,5 @@ date: 2018-01-01
 pub_type: article
 venue: "Siculorum Gymnasium, LXXI, IV (2018)"
 citation: "C. D’Agata, «Quid est veritas?». Una riflessione ermeneutica sulla post-verità tra Gadamer ed Eco, «Siculorum Gymnasium», LXXI, IV, 2018, pp. 385-393 (ISSN 2499-667X)."
+academia: "https://www.academia.edu/62577468"
 ---

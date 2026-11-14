@@ -14,5 +14,6 @@ synopsis: "..."
 buy_links:
   - label: "Editore (La scuola di Pitagora) — Open Access"
     url: "https://www.scuoladipitagora.it/collane-edizioni-sinestesie/dyo-logoi/viva-l-italia-viva-oracqua-il-cuore-dei-vicer%C3%A9-di-federico-de-roberto-open-access"
+academia: "https://www.academia.edu/180938170"
 ---
 Testo libero della scheda (facoltativo).

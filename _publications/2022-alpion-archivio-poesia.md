@@ -7,4 +7,5 @@ pub_type: proceedings
 venue: "AIUCD Proceedings 2022"
 citation: "A. Di Silvestro, C. D’Agata, G. Palazzolo, P. Sichera, Conservazione e fruizione di banche dati letterarie: l’archivio della poesia italiana dell’Otto/Novecento di Giuseppe Savoca, in AIUCD Proceedings 2022, a cura di F. Ciracì, G. Miglietta, C. Gatto, 2022."
 doi: "10.6092/unibo/amsacta/6848"
+academia: "https://www.academia.edu/70860390"
 ---

@@ -16,6 +16,7 @@ synopsis_short: "Un viaggio nella genesi apocalittica del Nome della rosa: dallâ
 buy_links:
   - label: "Editore (Eliphi)"
     url: "https://www.eliphi.fr/eliphi/catalogue/publication/nel-nome-della-rosa-apocalissi-genesi-varianti-211"
+academia: "https://www.academia.edu/165071517"
 ---
 
 ## Sinossi

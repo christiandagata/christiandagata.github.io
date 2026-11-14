@@ -8,4 +8,5 @@ venue: "Expressio, 8 (Mimesis)"
 citation: "C. D’Agata, «Una parola decisiva». Una lettura computazionale del Diario e di Dissipatio H.G., in «Ne riparliamo domani». Guido Morselli a cinquant’anni dalla scomparsa (1973-2023), Expressio – Rivista di linguistica, letteratura e comunicazione, 8, Mimesis, 2024, pp. 155-171."
 featured: true
 featured_rank: 6
+academia: "https://www.academia.edu/180681158"
 ---

@@ -6,4 +6,5 @@ date: 2019-01-01
 pub_type: article
 venue: "Siculorum Gymnasium, LXXII, V (2019)"
 citation: "C. D’Agata, Per una Sentiment Analysis eretica. Un esperimento digitale su L’eresia catara di Luigi Pirandello, «Siculorum Gymnasium», LXXII, V, 2019, pp. 295-312 (ISSN 2499-667X)."
+academia: "https://www.academia.edu/62577467"
 ---

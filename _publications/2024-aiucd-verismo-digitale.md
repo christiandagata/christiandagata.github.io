@@ -6,4 +6,5 @@ date: 2024-01-01
 pub_type: proceedings
 venue: "AIUCD 2024 Proceedings"
 citation: "L. P. Barbarino, C. D’Agata et al., Verismo Digitale. Per un’edizione digitale commentata delle opere di Verga, Capuana, De Roberto, in Me.Te. Digitali. Proceedings XIII Convegno AIUCD, Catania 2024, pp. 252-259."
+academia: "https://www.academia.edu/180719822"
 ---

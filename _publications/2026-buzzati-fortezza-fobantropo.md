@@ -8,4 +8,5 @@ venue: "Buzzati’s Critical Crossings, Quaderni del Centro Studi Buzzati (Fabri
 citation: "C. D’Agata, La fortezza e il fobantropo. Leggere Il deserto dei Tartari e Dissipatio H.G. ai tempi della pandemia, in Buzzati’s Critical Crossings, a cura di M. Ceravolo e E. Morra, Quaderni del Centro Studi Buzzati, Pisa-Roma, Fabrizio Serra Editore, 2026."
 featured: true
 featured_rank: 4
+academia: "https://www.academia.edu/180937329"
 ---

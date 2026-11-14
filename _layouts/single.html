@@ -78,6 +78,7 @@ layout: default
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.academia %}<p style="font-size: smaller"><a href="{{ page.academia }}" target="_blank" rel="noopener"><i class="ai ai-academia" aria-hidden="true"></i> Scheda su Academia.edu</a></p>{% endif %}
       </section>
 
       <footer class="page__meta">

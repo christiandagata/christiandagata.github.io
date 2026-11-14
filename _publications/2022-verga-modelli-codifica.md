@@ -6,4 +6,5 @@ date: 2022-01-01
 pub_type: article
 venue: "Rivista di letteratura italiana XL, 3 (2022)"
 citation: "A. Di Silvestro, G. Canzoneri, C. D’Agata, M. Grasso, Per un’edizione digitale delle opere di Giovanni Verga: rappresentazione del testo e modelli di codifica (con alcuni esempi sulle novelle), «Rivista di letteratura italiana», XL, 3, 2022 (ISSN 0392-825X)."
+academia: "https://www.academia.edu/93846702"
 ---
